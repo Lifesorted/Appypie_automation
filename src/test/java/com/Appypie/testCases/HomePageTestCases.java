@@ -2,21 +2,22 @@ package com.Appypie.testCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.Appypie.Utility.browserFactory;
 import com.Appypie.pages.HomePage;
+import com.Appypie.pages.baseClass;
 
-public class HomePageTestCases {
-
-	WebDriver driver;
+public class HomePageTestCases extends baseClass{
 	
 	@Test
 	public void loginTest() {
 		
-      driver=browserFactory.startApplication(driver, "chrome", "Https://www.appypie.com");
       HomePage homepage=PageFactory.initElements(driver, HomePage.class);
-      homepage.logintoApp("shailendra@ppypie.com", "Secure@web1");
-      browserFactory.quitbrowser(driver);
+      homepage.logintoApp("shailendra@appypie.com", "Secure@web1");
+      
 	}
+	
 }

@@ -20,7 +20,7 @@ public class browserFactory {
 			driver=new FirefoxDriver();
 		}
 		else {
-			System.out.println("Driver not Found");
+			System.out.println("Driver not Found or do not support the browser.");
 		}
 		
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);

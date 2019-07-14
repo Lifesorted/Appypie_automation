@@ -1,0 +1,38 @@
+[33mcommit 4f81af0002bab27e5caadd55eab476a20008b8f2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Lifesorted <mailmeshailendrakumar@gmail.com>
+Date:   Sat Jul 6 11:31:31 2019 -0700
+
+    commit all initial files
+
+[33mcommit 8d3b3281fe681d26924d5e3e81425d0a09ce731b[m
+Merge: e8f666e 33abb18
+Author: Lifesorted <mailmeshailendrakumar@gmail.com>
+Date:   Sat Jul 6 05:55:44 2019 -0700
+
+    Merge branch 'master' of https://github.com/Lifesorted/Appypie_automation
+
+[33mcommit e8f666e32f65c8b013c516ebbae46c387eab4566[m
+Author: Lifesorted <mailmeshailendrakumar@gmail.com>
+Date:   Sat Jul 6 05:50:50 2019 -0700
+
+    Modified apptest.java and add new file ogintest.java
+
+[33mcommit 33abb18cede47944f43fbe00a2f557255514b6a8[m
+Author: Lifesorted <35922505+Lifesorted@users.noreply.github.com>
+Date:   Sat Jul 6 05:32:23 2019 -0700
+
+    added sys changes
+    
+    this is temporary chnages
+
+[33mcommit c306c42d8c4c03ed5402c42bebf1486ed1560b71[m
+Author: Lifesorted <mailmeshailendrakumar@gmail.com>
+Date:   Sat Jul 6 05:26:04 2019 -0700
+
+    create tst.java
+
+[33mcommit 982a9184f8e9e818c4b8bc290121ba80160036d4[m
+Author: Lifesorted <mailmeshailendrakumar@gmail.com>
+Date:   Sat Jul 6 05:05:17 2019 -0700
+
+    Initial commit

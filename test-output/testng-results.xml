@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48640" started-at="2019-07-06T18:25:12Z" finished-at="2019-07-06T18:26:00Z">
+  <suite name="Default suite" duration-ms="31345" started-at="2019-07-07T14:21:29Z" finished-at="2019-07-07T14:22:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48640" started-at="2019-07-06T18:25:12Z" finished-at="2019-07-06T18:26:00Z">
+    <test name="Default test" duration-ms="31345" started-at="2019-07-07T14:21:29Z" finished-at="2019-07-07T14:22:00Z">
       <class name="com.Appypie.testCases.HomePageTestCases">
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1fc5af1]" name="loginTest" duration-ms="48593" started-at="2019-07-06T11:25:12Z" finished-at="2019-07-06T11:26:00Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@a3ffec]" name="launchBrowser" is-config="true" duration-ms="14258" started-at="2019-07-07T07:21:29Z" finished-at="2019-07-07T07:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@a3ffec]" name="loginTest" duration-ms="15676" started-at="2019-07-07T07:21:43Z" finished-at="2019-07-07T07:21:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@a3ffec]" name="tearDown" is-config="true" duration-ms="1380" started-at="2019-07-07T07:21:59Z" finished-at="2019-07-07T07:22:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.Appypie.testCases.HomePageTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

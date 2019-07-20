@@ -43,5 +43,11 @@ public class HomePageTestCases extends baseClass{
 		homepage.verifylogoClick();
 	}
 	
+	@Test(priority=5)
+	private void signUpbtnTest() throws InterruptedException {
+		homepage=PageFactory.initElements(driver, HomePage.class);
+		homepage.verifyJoinbtn();
+	}
+	
 	
 }

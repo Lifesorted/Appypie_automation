@@ -12,12 +12,36 @@ import com.Appypie.pages.baseClass;
 
 public class HomePageTestCases extends baseClass{
 	
-	@Test
-	public void loginTest() {
-		
-      HomePage homepage=PageFactory.initElements(driver, HomePage.class);
-      homepage.logintoApp("shailendra@appypie.com", "Secure@web1");
-      
+	HomePage homepage;
+	
+	@Test(priority=0)
+	public void loginTest() throws InterruptedException {
+	  homepage=PageFactory.initElements(driver, HomePage.class);
+      homepage.logintoApp("shailendra@appypie.com", "secure@web1");
 	}
+	
+/*	@Test(priority=1)
+	public void checkLogoText() {
+		homepage.verifyLogotext();
+	}
+	
+	@Test(priority=2)
+	public void languageIconTest() {
+		homepage=PageFactory.initElements(driver, HomePage.class);
+		homepage.verifyLanguageIcon();
+	}
+	
+	@Test(priority=3)
+	public void changeLanguageTest() {
+		homepage=PageFactory.initElements(driver, HomePage.class);
+		homepage.verifyLanguageOptions();
+	}
+	
+	@Test(priority=4)
+	public void logoClickTest() {
+		homepage=PageFactory.initElements(driver, HomePage.class);
+		homepage.verifylogoClick();
+	}*/
+	
 	
 }

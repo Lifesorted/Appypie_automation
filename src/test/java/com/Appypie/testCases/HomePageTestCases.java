@@ -20,7 +20,7 @@ public class HomePageTestCases extends baseClass{
       homepage.logintoApp("shailendra@appypie.com", "secure@web1");
 	}
 	
-/*	@Test(priority=1)
+	@Test(priority=1)
 	public void checkLogoText() {
 		homepage.verifyLogotext();
 	}
@@ -41,7 +41,7 @@ public class HomePageTestCases extends baseClass{
 	public void logoClickTest() {
 		homepage=PageFactory.initElements(driver, HomePage.class);
 		homepage.verifylogoClick();
-	}*/
+	}
 	
 	
 }

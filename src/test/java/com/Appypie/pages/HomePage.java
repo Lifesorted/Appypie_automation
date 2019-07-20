@@ -33,6 +33,9 @@ public class HomePage {
 	@FindBy(xpath="//button[@id='submitme']")
 	WebElement loginme;
 	
+	@FindBy(xpath="//a[contains(text(),'Join')]")
+	WebElement joinbutton;
+	
 	@FindBy(xpath="//span[contains(text(), 'appypie.com')]")
 	WebElement logotext;
 	
@@ -102,6 +105,15 @@ public class HomePage {
 	    }
 	}
 	
-	
+	public void verifyJoinbtn() throws InterruptedException {
+		joinbutton.click();
+		Thread.sleep(3000);
+		String signupurl=driver.getCurrentUrl();
+		if(signupurl.equals("https://snappy.appypie.com/signup")) {
+			System.out.println("Signup button clickable and redirect to signup popup");
+		}else {
+			System.out.println("Buttton is blocked or no clikable");
+		}
+	}
 
 }

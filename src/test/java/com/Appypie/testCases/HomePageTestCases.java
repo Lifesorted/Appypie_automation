@@ -7,17 +7,20 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.Appypie.Utility.browserFactory;
+import com.Appypie.Utility.excelDataProvider;
 import com.Appypie.pages.HomePage;
 import com.Appypie.pages.baseClass;
 
 public class HomePageTestCases extends baseClass{
 	
 	HomePage homepage;
+	excelDataProvider excel=new excelDataProvider();
 	
 	@Test(priority=0)
 	public void loginTest() throws InterruptedException {
+		
 	  homepage=PageFactory.initElements(driver, HomePage.class);
-      homepage.logintoApp("shailendra@appypie.com", "secure@web1");
+      homepage.logintoApp(excel.getStringData("Login", 0, 0),excel.getStringData("Login", 0, 1));
 	}
 	
 	@Test(priority=1)

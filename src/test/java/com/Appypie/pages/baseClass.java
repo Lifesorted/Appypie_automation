@@ -12,6 +12,7 @@ public class baseClass {
 
 	public WebDriver driver;
 	
+		
 	@BeforeMethod
 	public void launchBrowser() {
 		driver=browserFactory.startApplication(driver, "chrome", "Https://www.appypie.com");

@@ -23,6 +23,7 @@ public class helper {
 		}
 	}
 	
+	// get date to append with screenshot
 	public static String getCurrentDateTime() {
 		DateFormat customformat=new SimpleDateFormat("MM_dd_yy_HH_mm_ss");
 		Date currentDate=new Date();

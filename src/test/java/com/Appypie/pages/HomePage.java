@@ -30,7 +30,7 @@ public class HomePage {
 	@FindBy(xpath="//input[@name='login_password']")
 	WebElement password;
 	
-	@FindBy(xpath="//button[@id='submitme']")
+	@FindBy(xpath="//button[@id='submitmea']")
 	WebElement loginme;
 	
 	@FindBy(xpath="//a[contains(text(),'Join')]")

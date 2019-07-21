@@ -1,6 +1,7 @@
 package com.Appypie.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -10,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import com.Appypie.Utility.browserFactory;
 import com.Appypie.Utility.configDataProvider;
 import com.Appypie.Utility.excelDataProvider;
+import com.Appypie.Utility.helper;
 
 public class baseClass {
 
@@ -30,9 +32,14 @@ public class baseClass {
 	}
 	
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown(ITestResult result) {
+		
+		if(result.getStatus()==ITestResult.FAILURE) {
+			helper.captureScreenshot(driver);
+		}		
 		browserFactory.quitbrowser(driver);
 	}
+	
 	
 	
 }

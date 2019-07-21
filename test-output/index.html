@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\shailendra kumar\AppData\Local\Temp\testng-eclipse--190786672\testng-customsuite.xml</span>
+                    <span>C:\Users\shailendra kumar\AppData\Local\Temp\testng-eclipse-987634779\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="changeLanguageTest">changeLanguageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,17 +116,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="changeLanguageTest">changeLanguageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="checkLogoText">checkLogoText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="languageIconTest">languageIconTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,15 +159,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="changeLanguageTest">
-                  </a> <!-- changeLanguageTest -->
-                  <span class="method-name">changeLanguageTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://es.appypie.com?domain=es&quot;&gt; could not be scrolled into view
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;submitmea&apos;]&quot;}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
 System info: host: &apos;SHAILENDRA&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7440, moz:profile: C:\Users\shailendra kumar\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.2, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SHAILE~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59352}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be827738b4ae7384d1939694ec9f78b5
+*** Element info: {Using=xpath, value=//button[@id=&apos;submitmea&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -178,16 +181,15 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.Appypie.pages.HomePage.verifyLanguageOptions(HomePage.java:91)
-	at com.Appypie.testCases.HomePageTestCases.changeLanguageTest(HomePageTestCases.java:39)
+	at com.Appypie.pages.HomePage.logintoApp(HomePage.java:56)
+	at com.Appypie.testCases.HomePageTestCases.loginTest(HomePageTestCases.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -227,6 +229,13 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="changeLanguageTest">
+                  </a> <!-- changeLanguageTest -->
+                  <span class="method-name">changeLanguageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkLogoText">
                   </a> <!-- checkLogoText -->
                   <span class="method-name">checkLogoText</span>
@@ -237,13 +246,6 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
                   <a name="languageIconTest">
                   </a> <!-- languageIconTest -->
                   <span class="method-name">languageIconTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -265,7 +267,7 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shailendra kumar\AppData\Local\Temp\testng-eclipse--190786672\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shailendra kumar\AppData\Local\Temp\testng-eclipse-987634779\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -316,34 +318,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'signUpbtnTest')
 data.setCell(0, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(0, 3, 17435);
+data.setCell(0, 3, 18004);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'signUpbtnTest')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(1, 3, 12903);
+data.setCell(1, 3, 11758);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'logoClickTest')
+data.setCell(2, 1, 'changeLanguageTest')
 data.setCell(2, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(2, 3, 1456);
+data.setCell(2, 3, 6912);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'changeLanguageTest')
+data.setCell(3, 1, 'logoClickTest')
 data.setCell(3, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(3, 3, 389);
+data.setCell(3, 3, 1503);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'languageIconTest')
 data.setCell(4, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(4, 3, 284);
+data.setCell(4, 3, 196);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'checkLogoText')
 data.setCell(5, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(5, 3, 3);
+data.setCell(5, 3, 5);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -376,77 +378,77 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">821 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">25262 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">42700 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">47141 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkLogoText</span>
-                <span class="method-start">62404 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">62409 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">65395 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">languageIconTest</span>
-                <span class="method-start">79820 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">80106 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">83430 ms</span>
+                <span class="method-start">965 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">changeLanguageTest</span>
-                <span class="method-start">97498 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">9636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">97891 ms</span>
+                <span class="method-name">tearDown([TestResult name=loginTest status=FAILURE method=HomePageTestCases.loginTest()[pri:0, instance:com.A...)</span>
+                <span class="method-start">21398 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">101497 ms</span>
+                <span class="method-start">23249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkLogoText</span>
+                <span class="method-start">30304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=checkLogoText status=SUCCESS method=HomePageTestCases.checkLogoText()[pri:1, instan...)</span>
+                <span class="method-start">30311 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">31533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">languageIconTest</span>
+                <span class="method-start">38535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=languageIconTest status=SUCCESS method=HomePageTestCases.languageIconTest()[pri:2, ...)</span>
+                <span class="method-start">38733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">39774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeLanguageTest</span>
+                <span class="method-start">46636 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=changeLanguageTest status=SUCCESS method=HomePageTestCases.changeLanguageTest()[pri...)</span>
+                <span class="method-start">53550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">54558 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoClickTest</span>
-                <span class="method-start">116471 ms</span>
+                <span class="method-start">62044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">117928 ms</span>
+                <span class="method-name">tearDown([TestResult name=logoClickTest status=SUCCESS method=HomePageTestCases.logoClickTest()[pri:4, instan...)</span>
+                <span class="method-start">63549 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">121021 ms</span>
+                <span class="method-start">64709 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpbtnTest</span>
-                <span class="method-start">136313 ms</span>
+                <span class="method-start">72189 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">149219 ms</span>
+                <span class="method-name">tearDown([TestResult name=signUpbtnTest status=SUCCESS method=HomePageTestCases.signUpbtnTest()[pri:5, instan...)</span>
+                <span class="method-start">90197 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

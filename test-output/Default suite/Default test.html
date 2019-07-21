@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 21 01:21:26 PDT 2019</td>
+<td>Started on:</td><td>Sun Jul 21 03:09:47 PDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>151 seconds (151075 ms)</td>
+<tr><td>Total time:</td><td>90 seconds (90515 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Appypie.testCases.HomePageTestCases.changeLanguageTest()'><b>changeLanguageTest</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://es.appypie.com?domain=es&quot;&gt; could not be scrolled into view
+<td title='com.Appypie.testCases.HomePageTestCases.loginTest()'><b>loginTest</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;submitmea&apos;]&quot;}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
 System info: host: &apos;SHAILENDRA&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7440, moz:profile: C:\Users\shailendra kumar\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.2, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SHAILE~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59352}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be827738b4ae7384d1939694ec9f78b5
+*** Element info: {Using=xpath, value=//button[@id=&apos;submitmea&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -92,16 +95,15 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.Appypie.pages.HomePage.verifyLanguageOptions(HomePage.java:91)
-	at com.Appypie.testCases.HomePageTestCases.changeLanguageTest(HomePageTestCases.java:39)
+	at com.Appypie.pages.HomePage.logintoApp(HomePage.java:56)
+	at com.Appypie.testCases.HomePageTestCases.loginTest(HomePageTestCases.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,13 +129,16 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-</pre></div><a href='#' onClick='toggleBox("stack-trace23713169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23713169'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;https://es.appypie.com?domain=es&quot;&gt; could not be scrolled into view
+</pre></div><a href='#' onClick='toggleBox("stack-trace5850535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5850535'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;submitmea&apos;]&quot;}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
 System info: host: &apos;SHAILENDRA&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7440, moz:profile: C:\Users\shailendra kumar\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.2, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\SHAILE~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59352}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be827738b4ae7384d1939694ec9f78b5
+*** Element info: {Using=xpath, value=//button[@id=&apos;submitmea&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -144,16 +149,15 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at com.Appypie.pages.HomePage.verifyLanguageOptions(HomePage.java:91)
-	at com.Appypie.testCases.HomePageTestCases.changeLanguageTest(HomePageTestCases.java:39)
+	at com.Appypie.pages.HomePage.logintoApp(HomePage.java:56)
+	at com.Appypie.testCases.HomePageTestCases.loginTest(HomePageTestCases.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,7 +184,7 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 </pre></div></td>
-<td>0</td>
+<td>11</td>
 <td>com.Appypie.testCases.HomePageTestCases@1caeb3e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -190,6 +194,11 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.Appypie.testCases.HomePageTestCases.changeLanguageTest()'><b>changeLanguageTest</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
+<td></td>
+<td>6</td>
+<td>com.Appypie.testCases.HomePageTestCases@1caeb3e</td></tr>
 <tr>
 <td title='com.Appypie.testCases.HomePageTestCases.checkLogoText()'><b>checkLogoText</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
 <td></td>
@@ -201,11 +210,6 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 <td>0</td>
 <td>com.Appypie.testCases.HomePageTestCases@1caeb3e</td></tr>
 <tr>
-<td title='com.Appypie.testCases.HomePageTestCases.loginTest()'><b>loginTest</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
-<td></td>
-<td>17</td>
-<td>com.Appypie.testCases.HomePageTestCases@1caeb3e</td></tr>
-<tr>
 <td title='com.Appypie.testCases.HomePageTestCases.logoClickTest()'><b>logoClickTest</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
 <td></td>
 <td>1</td>
@@ -213,7 +217,7 @@ Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
 <tr>
 <td title='com.Appypie.testCases.HomePageTestCases.signUpbtnTest()'><b>signUpbtnTest</b><br>Test class: com.Appypie.testCases.HomePageTestCases</td>
 <td></td>
-<td>12</td>
+<td>18</td>
 <td>com.Appypie.testCases.HomePageTestCases@1caeb3e</td></tr>
 </table><p>
 </body>

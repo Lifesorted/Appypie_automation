@@ -14,7 +14,6 @@ import com.Appypie.pages.baseClass;
 public class HomePageTestCases extends baseClass{
 	
 	HomePage homepage;
-	excelDataProvider excel=new excelDataProvider();
 	
 	@Test(priority=0)
 	public void loginTest() throws InterruptedException {

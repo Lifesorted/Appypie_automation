@@ -1,81 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="94928" started-at="2019-07-21T07:44:23Z" finished-at="2019-07-21T07:45:58Z">
+  <suite name="Default suite" duration-ms="151075" started-at="2019-07-21T08:21:26Z" finished-at="2019-07-21T08:23:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="94928" started-at="2019-07-21T07:44:23Z" finished-at="2019-07-21T07:45:58Z">
+    <test name="Default test" duration-ms="151075" started-at="2019-07-21T08:21:26Z" finished-at="2019-07-21T08:23:57Z">
       <class name="com.Appypie.testCases.HomePageTestCases">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="7871" started-at="2019-07-21T00:44:23Z" finished-at="2019-07-21T00:44:31Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="setupSuite" is-config="true" duration-ms="804" started-at="2019-07-21T01:21:26Z" finished-at="2019-07-21T01:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="launchBrowser" is-config="true" duration-ms="24441" started-at="2019-07-21T01:21:26Z" finished-at="2019-07-21T01:21:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="loginTest" duration-ms="17739" started-at="2019-07-21T00:44:31Z" finished-at="2019-07-21T00:44:49Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="loginTest" duration-ms="17435" started-at="2019-07-21T01:21:51Z" finished-at="2019-07-21T01:22:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1269" started-at="2019-07-21T00:44:49Z" finished-at="2019-07-21T00:44:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="tearDown" is-config="true" duration-ms="4439" started-at="2019-07-21T01:22:08Z" finished-at="2019-07-21T01:22:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="9290" started-at="2019-07-21T00:44:50Z" finished-at="2019-07-21T00:44:59Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="launchBrowser" is-config="true" duration-ms="15263" started-at="2019-07-21T01:22:13Z" finished-at="2019-07-21T01:22:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="checkLogoText()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="checkLogoText" duration-ms="2" started-at="2019-07-21T00:44:59Z" finished-at="2019-07-21T00:44:59Z">
+        <test-method status="PASS" signature="checkLogoText()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="checkLogoText" duration-ms="3" started-at="2019-07-21T01:22:28Z" finished-at="2019-07-21T01:22:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="931" started-at="2019-07-21T00:44:59Z" finished-at="2019-07-21T00:45:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="tearDown" is-config="true" duration-ms="2986" started-at="2019-07-21T01:22:28Z" finished-at="2019-07-21T01:22:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="6483" started-at="2019-07-21T00:45:00Z" finished-at="2019-07-21T00:45:07Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="launchBrowser" is-config="true" duration-ms="14425" started-at="2019-07-21T01:22:31Z" finished-at="2019-07-21T01:22:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="languageIconTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="languageIconTest" duration-ms="195" started-at="2019-07-21T00:45:07Z" finished-at="2019-07-21T00:45:07Z">
+        <test-method status="PASS" signature="languageIconTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="languageIconTest" duration-ms="284" started-at="2019-07-21T01:22:45Z" finished-at="2019-07-21T01:22:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- languageIconTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1101" started-at="2019-07-21T00:45:07Z" finished-at="2019-07-21T00:45:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="tearDown" is-config="true" duration-ms="3324" started-at="2019-07-21T01:22:46Z" finished-at="2019-07-21T01:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="6417" started-at="2019-07-21T00:45:08Z" finished-at="2019-07-21T00:45:14Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="launchBrowser" is-config="true" duration-ms="14068" started-at="2019-07-21T01:22:49Z" finished-at="2019-07-21T01:23:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="changeLanguageTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="changeLanguageTest" duration-ms="6669" started-at="2019-07-21T00:45:14Z" finished-at="2019-07-21T00:45:21Z">
+        <test-method status="FAIL" signature="changeLanguageTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="changeLanguageTest" duration-ms="389" started-at="2019-07-21T01:23:03Z" finished-at="2019-07-21T01:23:03Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a href="https://es.appypie.com?domain=es"> could not be scrolled into view
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'SHAILENDRA', ip: '192.168.0.108', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7440, moz:profile: C:\Users\shailendra kumar\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.2, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="https://es.appypie.com?domain=es"> could not be scrolled into view
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'SHAILENDRA', ip: '192.168.0.108', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7440, moz:profile: C:\Users\shailendra kumar\A..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.2, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fa41e775-dc6b-45c2-8957-11bb8a907f60
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.Appypie.pages.HomePage.verifyLanguageOptions(HomePage.java:91)
+	at com.Appypie.testCases.HomePageTestCases.changeLanguageTest(HomePageTestCases.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeLanguageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="945" started-at="2019-07-21T00:45:21Z" finished-at="2019-07-21T00:45:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="tearDown" is-config="true" duration-ms="3606" started-at="2019-07-21T01:23:03Z" finished-at="2019-07-21T01:23:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="11366" started-at="2019-07-21T00:45:22Z" finished-at="2019-07-21T00:45:33Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="launchBrowser" is-config="true" duration-ms="14974" started-at="2019-07-21T01:23:07Z" finished-at="2019-07-21T01:23:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="logoClickTest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="logoClickTest" duration-ms="1610" started-at="2019-07-21T00:45:33Z" finished-at="2019-07-21T00:45:35Z">
+        <test-method status="PASS" signature="logoClickTest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="logoClickTest" duration-ms="1456" started-at="2019-07-21T01:23:22Z" finished-at="2019-07-21T01:23:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoClickTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="916" started-at="2019-07-21T00:45:35Z" finished-at="2019-07-21T00:45:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="tearDown" is-config="true" duration-ms="3093" started-at="2019-07-21T01:23:23Z" finished-at="2019-07-21T01:23:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="6480" started-at="2019-07-21T00:45:36Z" finished-at="2019-07-21T00:45:42Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="launchBrowser" is-config="true" duration-ms="15292" started-at="2019-07-21T01:23:27Z" finished-at="2019-07-21T01:23:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="signUpbtnTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="signUpbtnTest" duration-ms="14633" started-at="2019-07-21T00:45:42Z" finished-at="2019-07-21T00:45:57Z">
+        <test-method status="PASS" signature="signUpbtnTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="signUpbtnTest" duration-ms="12903" started-at="2019-07-21T01:23:42Z" finished-at="2019-07-21T01:23:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpbtnTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="964" started-at="2019-07-21T00:45:57Z" finished-at="2019-07-21T00:45:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@1caeb3e]" name="tearDown" is-config="true" duration-ms="2660" started-at="2019-07-21T01:23:55Z" finished-at="2019-07-21T01:23:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

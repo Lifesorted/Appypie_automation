@@ -105,6 +105,7 @@ public class HomePage {
 	    }
 	}
 	
+	// Test join button
 	public void verifyJoinbtn() throws InterruptedException {
 		joinbutton.click();
 		Thread.sleep(3000);

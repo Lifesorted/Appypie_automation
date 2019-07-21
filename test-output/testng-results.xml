@@ -2,80 +2,80 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="111261" started-at="2019-07-20T10:50:19Z" finished-at="2019-07-20T10:52:10Z">
+  <suite name="Default suite" duration-ms="94928" started-at="2019-07-21T07:44:23Z" finished-at="2019-07-21T07:45:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="111261" started-at="2019-07-20T10:50:19Z" finished-at="2019-07-20T10:52:10Z">
+    <test name="Default test" duration-ms="94928" started-at="2019-07-21T07:44:23Z" finished-at="2019-07-21T07:45:58Z">
       <class name="com.Appypie.testCases.HomePageTestCases">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="16087" started-at="2019-07-20T03:50:19Z" finished-at="2019-07-20T03:50:35Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="7871" started-at="2019-07-21T00:44:23Z" finished-at="2019-07-21T00:44:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="loginTest" duration-ms="21088" started-at="2019-07-20T03:50:35Z" finished-at="2019-07-20T03:50:56Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="loginTest" duration-ms="17739" started-at="2019-07-21T00:44:31Z" finished-at="2019-07-21T00:44:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1315" started-at="2019-07-20T03:50:56Z" finished-at="2019-07-20T03:50:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1269" started-at="2019-07-21T00:44:49Z" finished-at="2019-07-21T00:44:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="9174" started-at="2019-07-20T03:50:58Z" finished-at="2019-07-20T03:51:07Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="9290" started-at="2019-07-21T00:44:50Z" finished-at="2019-07-21T00:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="checkLogoText()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="checkLogoText" duration-ms="3" started-at="2019-07-20T03:51:07Z" finished-at="2019-07-20T03:51:07Z">
+        <test-method status="PASS" signature="checkLogoText()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="checkLogoText" duration-ms="2" started-at="2019-07-21T00:44:59Z" finished-at="2019-07-21T00:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1287" started-at="2019-07-20T03:51:07Z" finished-at="2019-07-20T03:51:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="931" started-at="2019-07-21T00:44:59Z" finished-at="2019-07-21T00:45:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="7732" started-at="2019-07-20T03:51:08Z" finished-at="2019-07-20T03:51:16Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="6483" started-at="2019-07-21T00:45:00Z" finished-at="2019-07-21T00:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="languageIconTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="languageIconTest" duration-ms="201" started-at="2019-07-20T03:51:16Z" finished-at="2019-07-20T03:51:16Z">
+        <test-method status="PASS" signature="languageIconTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="languageIconTest" duration-ms="195" started-at="2019-07-21T00:45:07Z" finished-at="2019-07-21T00:45:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- languageIconTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1574" started-at="2019-07-20T03:51:16Z" finished-at="2019-07-20T03:51:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1101" started-at="2019-07-21T00:45:07Z" finished-at="2019-07-21T00:45:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="8455" started-at="2019-07-20T03:51:18Z" finished-at="2019-07-20T03:51:26Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="6417" started-at="2019-07-21T00:45:08Z" finished-at="2019-07-21T00:45:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="changeLanguageTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="changeLanguageTest" duration-ms="8550" started-at="2019-07-20T03:51:26Z" finished-at="2019-07-20T03:51:35Z">
+        <test-method status="PASS" signature="changeLanguageTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="changeLanguageTest" duration-ms="6669" started-at="2019-07-21T00:45:14Z" finished-at="2019-07-21T00:45:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeLanguageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1626" started-at="2019-07-20T03:51:35Z" finished-at="2019-07-20T03:51:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="945" started-at="2019-07-21T00:45:21Z" finished-at="2019-07-21T00:45:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="7574" started-at="2019-07-20T03:51:36Z" finished-at="2019-07-20T03:51:44Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="11366" started-at="2019-07-21T00:45:22Z" finished-at="2019-07-21T00:45:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="logoClickTest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="logoClickTest" duration-ms="1906" started-at="2019-07-20T03:51:44Z" finished-at="2019-07-20T03:51:46Z">
+        <test-method status="PASS" signature="logoClickTest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="logoClickTest" duration-ms="1610" started-at="2019-07-21T00:45:33Z" finished-at="2019-07-21T00:45:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoClickTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="1762" started-at="2019-07-20T03:51:46Z" finished-at="2019-07-20T03:51:47Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="916" started-at="2019-07-21T00:45:35Z" finished-at="2019-07-21T00:45:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="7025" started-at="2019-07-20T03:51:47Z" finished-at="2019-07-20T03:51:54Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="launchBrowser" is-config="true" duration-ms="6480" started-at="2019-07-21T00:45:36Z" finished-at="2019-07-21T00:45:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="signUpbtnTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="signUpbtnTest" duration-ms="14890" started-at="2019-07-20T03:51:54Z" finished-at="2019-07-20T03:52:09Z">
+        <test-method status="PASS" signature="signUpbtnTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="signUpbtnTest" duration-ms="14633" started-at="2019-07-21T00:45:42Z" finished-at="2019-07-21T00:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpbtnTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="970" started-at="2019-07-20T03:52:09Z" finished-at="2019-07-20T03:52:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@12bac3f]" name="tearDown" is-config="true" duration-ms="964" started-at="2019-07-21T00:45:57Z" finished-at="2019-07-21T00:45:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

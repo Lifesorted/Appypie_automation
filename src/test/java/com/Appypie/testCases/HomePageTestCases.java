@@ -15,6 +15,7 @@ public class HomePageTestCases extends baseClass{
 	
 	HomePage homepage;
 	
+	//login test case
 	@Test(priority=0)
 	public void loginTest() throws InterruptedException {
 		

@@ -30,7 +30,7 @@ public class HomePage {
 	@FindBy(xpath="//input[@name='login_password']")
 	WebElement password;
 	
-	@FindBy(xpath="//button[@id='submitmea']")
+	@FindBy(xpath="//button[@id='submitme']")
 	WebElement loginme;
 	
 	@FindBy(xpath="//a[contains(text(),'Join')]")
@@ -89,6 +89,12 @@ public class HomePage {
 		Actions action =new Actions(driver);
 		action.moveToElement(languageicon).perform();
 		Espanollang.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String spanishurl=driver.getCurrentUrl();
 		Assert.assertEquals(spanishurl, "https://es.appypie.com/?domain=es");
 		System.out.println("Url get Change and current url is>>>>>"+spanishurl);

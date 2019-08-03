@@ -10,11 +10,7 @@
   <name>Appypie_automation</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <dependencies>
+<dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -77,4 +73,23 @@
   <type>pom</type>
 </dependency>
   </dependencies>
+  
+  <build>
+  <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>xmlFiles/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    
+</plugins>
+  </build>
+  
+  
 </project>

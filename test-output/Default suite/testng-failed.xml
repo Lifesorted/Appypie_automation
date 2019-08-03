@@ -5,7 +5,7 @@
     <classes>
       <class name="com.Appypie.testCases.HomePageTestCases">
         <methods>
-          <include name="loginTest"/>
+          <include name="changeLanguageTest"/>
           <include name="setupSuite"/>
           <include name="tearDown"/>
           <include name="launchBrowser"/>

@@ -29,5 +29,8 @@ public class excelDataProvider {
 	public String getStringData(int sheetindex,int row,int col) {
 		return wb.getSheetAt(sheetindex).getRow(row).getCell(col).getStringCellValue();
 	}
-
+  
+	public String getappysearchtext(String sheetname,int row,int col) {
+		return wb.getSheet(sheetname).getRow(row).getCell(col).getStringCellValue();
+	}
 }

@@ -5,10 +5,10 @@
     <classes>
       <class name="com.Appypie.testCases.HomePageTestCases">
         <methods>
-          <include name="changeLanguageTest"/>
           <include name="setupSuite"/>
           <include name="tearDown"/>
           <include name="launchBrowser"/>
+          <include name="appysearchtest"/>
         </methods>
       </class> <!-- com.Appypie.testCases.HomePageTestCases -->
     </classes>

@@ -1,124 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88487" started-at="2019-08-03T05:52:58Z" finished-at="2019-08-03T05:54:26Z">
+  <suite name="Default suite" duration-ms="24058" started-at="2019-08-03T12:38:22Z" finished-at="2019-08-03T12:38:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="88487" started-at="2019-08-03T05:52:58Z" finished-at="2019-08-03T05:54:26Z">
+    <test name="Default test" duration-ms="24058" started-at="2019-08-03T12:38:22Z" finished-at="2019-08-03T12:38:46Z">
       <class name="com.Appypie.testCases.HomePageTestCases">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="setupSuite" is-config="true" duration-ms="576" started-at="2019-08-03T05:52:57Z" finished-at="2019-08-03T05:52:58Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="setupSuite" is-config="true" duration-ms="562" started-at="2019-08-03T12:38:22Z" finished-at="2019-08-03T12:38:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="7753" started-at="2019-08-03T05:52:58Z" finished-at="2019-08-03T05:53:06Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="7468" started-at="2019-08-03T12:38:22Z" finished-at="2019-08-03T12:38:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="loginTest" duration-ms="16825" started-at="2019-08-03T05:53:06Z" finished-at="2019-08-03T05:53:22Z">
+        <test-method status="FAIL" signature="appysearchtest()[pri:6, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="appysearchtest" duration-ms="15594" started-at="2019-08-03T12:38:30Z" finished-at="2019-08-03T12:38:45Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-info ng-scope']"}
+  (Session info: chrome=76.0.3809.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'LAPTOP30', ip: '192.168.0.105', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Admin1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f7f57119d16b287ccc8ea68de938af6b
+*** Element info: {Using=xpath, value=//div[@class='alert alert-info ng-scope']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-info ng-scope']"}
+  (Session info: chrome=76.0.3809.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'LAPTOP30', ip: '192.168.0.105', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.87, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\Admin1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f7f57119d16b287ccc8ea68de938af6b
+*** Element info: {Using=xpath, value=//div[@class='alert alert-info ng-scope']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.getText(Unknown Source)
+at com.Appypie.pages.HomePage.navigateAppyStore(HomePage.java:155)
+at com.Appypie.testCases.HomePageTestCases.appysearchtest(HomePageTestCases.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="646" started-at="2019-08-03T05:53:22Z" finished-at="2019-08-03T05:53:23Z">
+        </test-method> <!-- appysearchtest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="974" started-at="2019-08-03T12:38:45Z" finished-at="2019-08-03T12:38:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=HomePageTestCases.loginTest()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="6056" started-at="2019-08-03T05:53:23Z" finished-at="2019-08-03T05:53:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="checkLogoText()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="checkLogoText" duration-ms="1" started-at="2019-08-03T05:53:29Z" finished-at="2019-08-03T05:53:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkLogoText -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="812" started-at="2019-08-03T05:53:29Z" finished-at="2019-08-03T05:53:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkLogoText status=SUCCESS method=HomePageTestCases.checkLogoText()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="5578" started-at="2019-08-03T05:53:30Z" finished-at="2019-08-03T05:53:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="languageIconTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="languageIconTest" duration-ms="104" started-at="2019-08-03T05:53:35Z" finished-at="2019-08-03T05:53:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- languageIconTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="621" started-at="2019-08-03T05:53:36Z" finished-at="2019-08-03T05:53:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=languageIconTest status=SUCCESS method=HomePageTestCases.languageIconTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="5968" started-at="2019-08-03T05:53:36Z" finished-at="2019-08-03T05:53:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="changeLanguageTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="changeLanguageTest" duration-ms="12133" started-at="2019-08-03T05:53:42Z" finished-at="2019-08-03T05:53:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeLanguageTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="627" started-at="2019-08-03T05:53:54Z" finished-at="2019-08-03T05:53:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=changeLanguageTest status=SUCCESS method=HomePageTestCases.changeLanguageTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="5960" started-at="2019-08-03T05:53:55Z" finished-at="2019-08-03T05:54:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="logoClickTest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="logoClickTest" duration-ms="866" started-at="2019-08-03T05:54:01Z" finished-at="2019-08-03T05:54:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoClickTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="765" started-at="2019-08-03T05:54:02Z" finished-at="2019-08-03T05:54:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=logoClickTest status=SUCCESS method=HomePageTestCases.logoClickTest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="launchBrowser" is-config="true" duration-ms="6461" started-at="2019-08-03T05:54:03Z" finished-at="2019-08-03T05:54:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="signUpbtnTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="signUpbtnTest" duration-ms="16615" started-at="2019-08-03T05:54:09Z" finished-at="2019-08-03T05:54:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpbtnTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@548e7350]" name="tearDown" is-config="true" duration-ms="672" started-at="2019-08-03T05:54:26Z" finished-at="2019-08-03T05:54:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpbtnTest status=SUCCESS method=HomePageTestCases.signUpbtnTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
+                <![CDATA[[TestResult name=appysearchtest status=FAILURE method=HomePageTestCases.appysearchtest()[pri:6, instance:com.Appypie.testCases.HomePageTestCases@548e7350] output={null}]]]>
               </value>
             </param>
           </params>

@@ -1,14 +1,18 @@
 package com.Appypie.pages;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -19,6 +23,7 @@ public class HomePage {
 	
 	public HomePage(WebDriver ldriver){
 		this.driver=ldriver;
+		//PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath="//a[contains(text(),'Log in')]")
@@ -42,12 +47,28 @@ public class HomePage {
 	@FindBy(xpath="//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='iconz-global']]")
 	WebElement languageicon;
 	
-	@FindBy(xpath="//a[contains(text(),'Español')]")
+	@FindBy(xpath="//a[contains(@href,'domain=es')]")
 	WebElement Espanollang;
 	
 	@FindBy(xpath="//img[@src='https://d2wuvg8krwnvon.cloudfront.net/wp/en/images/logo_new.png']")
 	WebElement logoclick;
-		
+	
+	@FindBy(xpath="//span[contains(text(),'Products')]")
+	WebElement products;
+	
+	@FindBy(xpath="//span[contains(text(),'Appy Store')]")
+	WebElement appystore;
+	
+	@FindBy(xpath="//input[@id=\"appfilter\"]")
+	WebElement searchapp;
+	
+	@FindBy(xpath="//img[@class='img-rounded mpappLogo']")
+	WebElement searchedtext;
+	
+	//@FindBy(xpath="//div[contains(text(),'No corresponding apps to your search criteria.')]")
+	@FindBy(xpath="//div[@class='alert alert-info ng-scope']")
+	WebElement appnotfound;
+	
 	//Login test with positive scenario 
 	public void logintoApp(String uname,String pass) throws InterruptedException {
 		LoginBtn.click();
@@ -122,5 +143,32 @@ public class HomePage {
 			System.out.println("Buttton is blocked or no clikable");
 		}
 	}
-
+	
+	//products page test method
+	public void navigateAppyStore(String searchstring){
+		Actions action =new Actions(driver);
+		action.moveToElement(products).perform();
+		appystore.click();
+		searchapp.clear();
+		searchapp.sendKeys(searchstring);
+		searchapp.sendKeys(Keys.RETURN);
+		//waitToload();
+		WebDriverWait wait = new WebDriverWait(driver, 20);  // timeout of 15 seconds
+		 try {
+		      wait.until(ExpectedConditions.visibilityOf(searchedtext));
+		     } catch (TimeoutException t) {
+		      System.out.println("Did not find the Label within explicit wait time");
+		     }
+		if(searchedtext.isDisplayed()) {
+			System.out.println("Searched App logo is present that means app is available on appystore");
+		}else {
+			System.out.println("App not available");
+		}
+		
+	}
+	
+	//common wait method for all
+	private void waitToload() {
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
 }

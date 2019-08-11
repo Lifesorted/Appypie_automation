@@ -1,10 +1,5 @@
 package com.Appypie.pages;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
@@ -17,13 +12,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class HomePage {
+public class HomePage{
 	
-	WebDriver driver;
-	
-	public HomePage(WebDriver ldriver){
-		this.driver=ldriver;
-		//PageFactory.initElements(driver, this);
+	WebDriver driver;	
+	public HomePage(WebDriver driver){
+	 this.driver=driver;
+	 PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath="//a[contains(text(),'Log in')]")
@@ -65,10 +59,14 @@ public class HomePage {
 	@FindBy(xpath="//img[@class='img-rounded mpappLogo']")
 	WebElement searchedtext;
 	
-	//@FindBy(xpath="//div[contains(text(),'No corresponding apps to your search criteria.')]")
 	@FindBy(xpath="//div[@class='alert alert-info ng-scope']")
 	WebElement appnotfound;
 	
+	@FindBy(xpath="//span[contains(text(),'Welcome')]")
+	WebElement welcomemenu;
+	
+	@FindBy(xpath="//a[contains(text(),'Logout')]")
+	WebElement Logout;
 	//Login test with positive scenario 
 	public void logintoApp(String uname,String pass) throws InterruptedException {
 		LoginBtn.click();
@@ -83,7 +81,7 @@ public class HomePage {
 			Assert.assertEquals(roadmapurl, "https://snappy.appypie.com/user#/roadmap");
 			System.out.println("Login successfully and redirect to roadmap page");
 		}
-
+        
 	}
 	
 	//Test logo text present below the logo
@@ -145,7 +143,7 @@ public class HomePage {
 	}
 	
 	//products page test method
-	public void navigateAppyStore(String searchstring){
+	public HomePage navigateAppyStore(String searchstring){
 		Actions action =new Actions(driver);
 		action.moveToElement(products).perform();
 		appystore.click();
@@ -164,11 +162,20 @@ public class HomePage {
 		}else {
 			System.out.println("App not available");
 		}
-		
+		return new HomePage(driver);
 	}
 	
 	//common wait method for all
 	private void waitToload() {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
+	
+	protected HomePage logoutfunctionality() {
+		Actions action =new Actions(driver);
+		action.moveToElement(welcomemenu).perform();
+		Logout.click();
+		return new HomePage(driver);
+	}
+	
+	
 }

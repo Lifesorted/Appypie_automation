@@ -1,65 +1,59 @@
 package com.Appypie.testCases;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.Appypie.Utility.browserFactory;
-import com.Appypie.Utility.excelDataProvider;
 import com.Appypie.pages.HomePage;
 import com.Appypie.pages.baseClass;
+import com.aventstack.extentreports.ExtentTest;
 
 public class HomePageTestCases extends baseClass{
 	
-	/*
-	 * public HomePageTestCases() { HomePage
-	 * homepage=PageFactory.initElements(driver, HomePage.class); }
-	 */
-	HomePage homepage;//=new HomePage(driver);
-	
-	//login test case
-	/*
+	HomePage homepage;
+	ExtentTest logger;
 	  @Test(priority=0)
 	  public void loginTest() throws InterruptedException {
-	  
-	  homepage=PageFactory.initElements(driver, HomePage.class);
-	  homepage.logintoApp(excel.getStringData("Login", 0,0),excel.getStringData("Login", 0, 1));
+	  logger = report.createTest("Login test");
+	  HomePage homepage=new HomePage(driver);
+	  logger.info("Start Application");
+      homepage.logintoApp(excel.getStringData("Login", 0,0),excel.getStringData("Login", 0, 1));
+      logger.pass("login success");
 	  }
 	  
 	  @Test(priority=1)
 	  public void checkLogoText() {
+	  logger=report.createTest("Logo text test");
+	  HomePage homepage=new HomePage(driver);
 	  homepage.verifyLogotext();
+	  logger.pass("Logo text is present");
 	  }
 	  
 	  @Test(priority=2)
 	  public void languageIconTest() {
-	  homepage=PageFactory.initElements(driver, HomePage.class);
+	  logger = report.createTest("Language icon present test");
+	  HomePage homepage=new HomePage(driver);
 	  homepage.verifyLanguageIcon();
 	  }
 	 
-	@Test(priority=3)
-	public void changeLanguageTest() {
-		homepage=PageFactory.initElements(driver, HomePage.class);
-		homepage.verifyLanguageOptions();
-	}
+	  @Test(priority=3)
+	  public void changeLanguageTest() {
+	  HomePage homepage=new HomePage(driver);
+	  homepage.verifyLanguageOptions();
+	  }
 	
 	  @Test(priority=4)
 	  public void logoClickTest() {
-	  homepage=PageFactory.initElements(driver, HomePage.class);
+	  HomePage homepage=new HomePage(driver);
 	  homepage.verifylogoClick();
 	  }
 	  
 	  @Test(priority=5)
 	  private void signUpbtnTest() throws InterruptedException {
-	  homepage=PageFactory.initElements(driver, HomePage.class);
+	  HomePage homepage=new HomePage(driver);
 	  homepage.verifyJoinbtn();
 	  }
-	  */
+	  
 	  @Test(priority=6)
 	  private void appysearchtest() {
-		  homepage=PageFactory.initElements(driver, HomePage.class);
-		  homepage.navigateAppyStore(excel.getappysearchtext("homepagetestdata", 0, 0));
+	   HomePage homepage=new HomePage(driver);
+	   homepage.navigateAppyStore(excel.getappysearchtext("homepagetestdata", 0, 0));
 	  }
 }

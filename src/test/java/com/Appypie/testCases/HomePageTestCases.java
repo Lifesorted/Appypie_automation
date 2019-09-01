@@ -9,6 +9,7 @@ public class HomePageTestCases extends baseClass{
 	
 	HomePage homepage;
 	ExtentTest logger;
+	
 	  @Test(priority=0)
 	  public void loginTest() throws InterruptedException {
 	  logger = report.createTest("Login test");
@@ -31,6 +32,7 @@ public class HomePageTestCases extends baseClass{
 	  logger = report.createTest("Language icon present test");
 	  HomePage homepage=new HomePage(driver);
 	  homepage.verifyLanguageIcon();
+	  logger.pass("language icon is present");
 	  }
 	 
 	  @Test(priority=3)

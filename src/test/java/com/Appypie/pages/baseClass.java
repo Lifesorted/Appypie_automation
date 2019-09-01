@@ -44,36 +44,25 @@ public class baseClass {
 	}
 	
 	@AfterMethod
-	public void tearDown(ITestResult result){
+	public void tearDown(ITestResult result) throws IOException{
 		
 		if(result.getStatus()==ITestResult.FAILURE) {
-			//helper.captureScreenshot(driver);
-			try {
+			
 				logger.fail("Test Failed",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-				
+			
 		}		
-		else if(result.getStatus()==ITestResult.SUCCESS) {
-			try {
+		/*else if(result.getStatus()==ITestResult.SUCCESS) {
+			
 				logger.pass("Test Passed",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-			    System.out.println("Screen shot captures but not pasting"+e.getMessage());
-			}	
-		}
+			
+		}*/
 		else if(result.getStatus()==ITestResult.SKIP) {
-			try {
+			
 				logger.skip("Test Skipped",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}	
+				
 		}
-		browserFactory.quitbrowser(driver);
-		report.flush();
 		
+		report.flush();
+		browserFactory.quitbrowser(driver);
 	}
 }

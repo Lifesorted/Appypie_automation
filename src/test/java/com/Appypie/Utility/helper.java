@@ -22,7 +22,7 @@ public class helper {
 		} catch (IOException e) {
 			System.out.println("Unable to capture screenshot"+e.getMessage());
 		}
-		return screenshotpath;
+       return screenshotpath;
 	}
 	
 	// get date to append with screenshot

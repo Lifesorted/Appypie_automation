@@ -1,5 +1,4 @@
-package com.Appypie.Utility;
-
+package com.Appypie.utilities;
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;

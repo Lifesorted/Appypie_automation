@@ -1,5 +1,4 @@
-package com.Appypie.pages;
-import java.util.concurrent.TimeUnit;
+package com.Appypie.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
@@ -16,8 +15,8 @@ public class HomePage{
 	
 	WebDriver driver;	
 	public HomePage(WebDriver driver){
-	 this.driver=driver;
-	 PageFactory.initElements(driver, this);
+	this.driver=driver;
+	PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath="//a[contains(text(),'Log in')]")
@@ -41,7 +40,7 @@ public class HomePage{
 	@FindBy(xpath="//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='iconz-global']]")
 	WebElement languageicon;
 	
-	@FindBy(xpath="//a[contains(@href,'es.appypie.com')]")
+	@FindBy(xpath="//a[text()='italiano']")
 	WebElement Espanollang;
 	
 	@FindBy(xpath="//img[@src='https://d2wuvg8krwnvon.cloudfront.net/wp/en/images/logo_new.png']")
@@ -115,7 +114,7 @@ public class HomePage{
 			e.printStackTrace();
 		}
 		String spanishurl=driver.getCurrentUrl();
-		Assert.assertEquals(spanishurl, "https://es.appypie.com/");
+		Assert.assertEquals(spanishurl, "https://it.appypie.com/");
 		System.out.println("Url get Change and current url is>>>>>"+spanishurl);
 		}
 	
@@ -165,17 +164,11 @@ public class HomePage{
 		return new HomePage(driver);
 	}
 	
-	//common wait method for all
-	private void waitToload() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	}
-	
 	protected HomePage logoutfunctionality() {
 		Actions action =new Actions(driver);
 		action.moveToElement(welcomemenu).perform();
 		Logout.click();
 		return new HomePage(driver);
 	}
-	
 	
 }

@@ -3,7 +3,11 @@ package com.Appypie.Utility;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 public class configDataProvider {
 	
@@ -20,12 +24,12 @@ public class configDataProvider {
 		}
 	}
 	
-	public String getBrowser() {
-		return pro.getProperty("Browser");
-	}
-	
 	public String getUrl() {
 		return pro.getProperty("qaUrl");
+	}
+	
+	public String getBrowser() {
+		return pro.getProperty("Browser");
 	}
 
 }

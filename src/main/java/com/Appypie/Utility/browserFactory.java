@@ -5,8 +5,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 public class browserFactory {
+	
 	
 	public static WebDriver startApplication(WebDriver driver, String browserName, String appUrl) {
 		if(browserName.equalsIgnoreCase("chrome"))
@@ -18,6 +20,10 @@ public class browserFactory {
 		{
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver=new FirefoxDriver();
+		}
+		else if(browserName.equalsIgnoreCase("IE"))
+		{
+			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
 		}
 		else {
 			System.out.println("Driver not Found or do not support the browser.");

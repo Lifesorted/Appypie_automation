@@ -8,9 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.Appypie.Utility.browserFactory;
 import com.Appypie.Utility.configDataProvider;
@@ -40,17 +44,19 @@ public class baseClass {
 	
 	@BeforeMethod
 	public void launchBrowser() {
+		
 		driver=browserFactory.startApplication(driver, configdp.getBrowser(), configdp.getUrl());
+		 //configdp.getBrowser()
 	}
 	
 	@AfterMethod
-	public void tearDown(ITestResult result) throws IOException{
-		
+	public void tearDown(ITestResult result) throws Exception{
+
 		if(result.getStatus()==ITestResult.FAILURE) {
 			
 				logger.fail("Test Failed",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
 			
-		}		
+		}	
 		/*else if(result.getStatus()==ITestResult.SUCCESS) {
 			
 				logger.pass("Test Passed",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
@@ -64,5 +70,6 @@ public class baseClass {
 		
 		report.flush();
 		browserFactory.quitbrowser(driver);
-	}
+}
+	
 }

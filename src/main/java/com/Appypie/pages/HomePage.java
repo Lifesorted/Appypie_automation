@@ -41,7 +41,7 @@ public class HomePage{
 	@FindBy(xpath="//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='iconz-global']]")
 	WebElement languageicon;
 	
-	@FindBy(xpath="//a[contains(@href,'domain=es')]")
+	@FindBy(xpath="//a[contains(@href,'es.appypie.com')]")
 	WebElement Espanollang;
 	
 	@FindBy(xpath="//img[@src='https://d2wuvg8krwnvon.cloudfront.net/wp/en/images/logo_new.png']")
@@ -115,7 +115,7 @@ public class HomePage{
 			e.printStackTrace();
 		}
 		String spanishurl=driver.getCurrentUrl();
-		Assert.assertEquals(spanishurl, "https://es.appypie.com/?domain=es");
+		Assert.assertEquals(spanishurl, "https://es.appypie.com/");
 		System.out.println("Url get Change and current url is>>>>>"+spanishurl);
 		}
 	

@@ -2,10 +2,30 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test Suite"  > 
 <!-- suite name="Suite Name" --> 
+    <listeners>
+    <listener class-name="com.Appypie.Utility.testNgListener" />
+    </listeners>
 
-            <test name="Homepagetestcase" allow-return-values="true">
+            <test name="FirefoxTest" allow-return-values="true">
+              <parameter name="browserName" value="firefox"/>
                      <classes>
-                       
+
+                             <class name ="com.Appypie.testCases.HomePageTestCases" />
+                             
+                     </classes>
+             </test>
+            <test name="chromeTest" allow-return-values="true">
+              <parameter name="browserName" value="chrome"/>
+                     <classes>
+               
+                             <class name ="com.Appypie.testCases.HomePageTestCases" />
+                             
+                     </classes>
+             </test>
+             <test name="IEtest" allow-return-values="true">
+               <parameter name="browserName" value="IE"/>
+                     <classes>
+                             
                              <class name ="com.Appypie.testCases.HomePageTestCases" />
                              
                      </classes>

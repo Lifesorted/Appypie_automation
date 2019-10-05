@@ -11,7 +11,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="loginTest"/>
-          <include name="changeLanguageTest"/>
           <include name="setupSuite"/>
           <include name="checkLogoText"/>
           <include name="languageIconTest"/>

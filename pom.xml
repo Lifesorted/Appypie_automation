@@ -10,6 +10,10 @@
   <name>Appypie_automation</name>
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
 <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -60,22 +64,17 @@
     <artifactId>selenium-chrome-driver</artifactId>
     <version>3.141.5</version>
 </dependency>
-   <!-- https://mvnrepository.com/artifact/com.opera/operadriver -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
 <dependency>
-    <groupId>com.opera</groupId>
-    <artifactId>operadriver</artifactId>
-    <version>1.4</version>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-ie-driver</artifactId>
+    <version>3.141.59</version>
 </dependency>
-   <dependency>
-  <groupId>org.apache.maven.surefire</groupId>
-  <artifactId>surefire</artifactId>
-  <version>3.0.0-M3</version>
-  <type>pom</type>
-</dependency>
-  </dependencies>
+
+</dependencies>
   
   <build>
-  <plugins>
+   <plugins>
     
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -87,8 +86,19 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
-    
-</plugins>
+      
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          </configuration>
+      </plugin>
+        
+   </plugins>
+   
   </build>
   
 </project>

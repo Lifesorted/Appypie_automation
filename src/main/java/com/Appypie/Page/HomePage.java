@@ -1,5 +1,9 @@
 package com.Appypie.Page;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -66,6 +70,9 @@ public class HomePage{
 	
 	@FindBy(xpath="//a[contains(text(),'Logout')]")
 	WebElement Logout;
+	
+	@FindBy(xpath="//a[contains(text(),'Create your free app') and @class='home-btn']")
+	WebElement creatorbtn;
 	//Login test with positive scenario 
 	public void logintoApp(String uname,String pass) throws InterruptedException {
 		LoginBtn.click();
@@ -113,9 +120,9 @@ public class HomePage{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String spanishurl=driver.getCurrentUrl();
-		Assert.assertEquals(spanishurl, "https://its.appypie.com/");
-		System.out.println("Url get Change and current url is>>>>>"+spanishurl);
+		String italianlang=driver.getCurrentUrl();
+		Assert.assertEquals(italianlang, "https://it.appypie.com/");
+		System.out.println("Url get Change and current url is>>>>>"+italianlang);
 		}
 	
 	//Test to verify logo is clickable or not  to refresh the current page 
@@ -171,4 +178,11 @@ public class HomePage{
 		return new HomePage(driver);
 	}
 	
+	public void creatorbtn_Test() {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,300)");
+		creatorbtn.click();
+		String url=driver.getCurrentUrl();
+		Assert.assertEquals(url,"https://snappy.appypie.com/appbuilder/creator-software/");
+	}
 }

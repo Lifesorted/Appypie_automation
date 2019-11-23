@@ -74,10 +74,10 @@ public class HomePage{
 		loginme.click();
 		Thread.sleep(5000);
 		String roadmapurl= driver.getCurrentUrl();
-		if(!roadmapurl.equals("https://snappy.appypie.com/user#/roadmap")) {
+		if(!roadmapurl.equals("https://snappy.appypie.com/user/app/")) {
 			System.out.println("Not able to login Check login details or site is down");
 		}else {
-			Assert.assertEquals(roadmapurl, "https://snappy.appypie.com/user#/roadmap");
+			Assert.assertEquals(roadmapurl, "https://snappy.appypie.com/user/app/");
 			System.out.println("Login successfully and redirect to roadmap page");
 		}
         
@@ -114,7 +114,7 @@ public class HomePage{
 			e.printStackTrace();
 		}
 		String spanishurl=driver.getCurrentUrl();
-		Assert.assertEquals(spanishurl, "https://it.appypie.com/");
+		Assert.assertEquals(spanishurl, "https://its.appypie.com/");
 		System.out.println("Url get Change and current url is>>>>>"+spanishurl);
 		}
 	

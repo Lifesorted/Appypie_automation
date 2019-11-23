@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="AppypieSuite" duration-ms="123831" started-at="2019-10-05T06:42:44Z" finished-at="2019-10-05T06:44:47Z">
+  <suite name="AppypieSuite" duration-ms="173113" started-at="2019-11-09T07:00:23Z" finished-at="2019-11-09T07:03:16Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="123831" started-at="2019-10-05T06:42:44Z" finished-at="2019-10-05T06:44:47Z">
+    <test name="ChromeTest" duration-ms="173113" started-at="2019-11-09T07:00:23Z" finished-at="2019-11-09T07:03:16Z">
       <class name="com.Appypie.testCases.HomePageTestCases">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="setupSuite" is-config="true" duration-ms="873" started-at="2019-10-05T06:42:43Z" finished-at="2019-10-05T06:42:44Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="setupSuite" is-config="true" duration-ms="905" started-at="2019-11-09T07:00:22Z" finished-at="2019-11-09T07:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="8634" started-at="2019-10-05T06:42:44Z" finished-at="2019-10-05T06:42:52Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="12128" started-at="2019-11-09T07:00:23Z" finished-at="2019-11-09T07:00:35Z">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,99 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="changeLanguageTest()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="changeLanguageTest" duration-ms="13991" started-at="2019-10-05T06:42:52Z" finished-at="2019-10-05T06:43:06Z">
+        <test-method status="FAIL" signature="changeLanguageTest()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="changeLanguageTest" duration-ms="12094" started-at="2019-11-09T07:00:35Z" finished-at="2019-11-09T07:00:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://its.appypie.com/] but found [https://it.appypie.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://its.appypie.com/] but found [https://it.appypie.com/]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.Appypie.Page.HomePage.verifyLanguageOptions(HomePage.java:117)
+at com.Appypie.testCases.HomePageTestCases.changeLanguageTest(HomePageTestCases.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeLanguageTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="660" started-at="2019-10-05T06:43:06Z" finished-at="2019-10-05T06:43:07Z">
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="1000" started-at="2019-11-09T07:00:48Z" finished-at="2019-11-09T07:00:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=changeLanguageTest status=SUCCESS method=HomePageTestCases.changeLanguageTest()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7] output={null}]]]>
+                <![CDATA[[TestResult name=changeLanguageTest status=FAILURE method=HomePageTestCases.changeLanguageTest()[pri:1, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.Appypie.Page.baseClass.tearDown(baseClass.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="7498" started-at="2019-10-05T06:43:07Z" finished-at="2019-10-05T06:43:14Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="10192" started-at="2019-11-09T07:00:49Z" finished-at="2019-11-09T07:00:59Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +125,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="logoClickTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="logoClickTest" duration-ms="1084" started-at="2019-10-05T06:43:14Z" finished-at="2019-10-05T06:43:16Z">
+        <test-method status="PASS" signature="logoClickTest()[pri:2, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="logoClickTest" duration-ms="1968" started-at="2019-11-09T07:00:59Z" finished-at="2019-11-09T07:01:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoClickTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="727" started-at="2019-10-05T06:43:16Z" finished-at="2019-10-05T06:43:16Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="1443" started-at="2019-11-09T07:01:01Z" finished-at="2019-11-09T07:01:02Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +140,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="7641" started-at="2019-10-05T06:43:16Z" finished-at="2019-10-05T06:43:24Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="9698" started-at="2019-11-09T07:01:02Z" finished-at="2019-11-09T07:01:12Z">
           <params>
             <param index="0">
               <value>
@@ -74,11 +151,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="signUpbtnTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="signUpbtnTest" duration-ms="10068" started-at="2019-10-05T06:43:24Z" finished-at="2019-10-05T06:43:34Z">
+        <test-method status="PASS" signature="signUpbtnTest()[pri:3, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="signUpbtnTest" duration-ms="12609" started-at="2019-11-09T07:01:12Z" finished-at="2019-11-09T07:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpbtnTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="652" started-at="2019-10-05T06:43:34Z" finished-at="2019-10-05T06:43:35Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="758" started-at="2019-11-09T07:01:24Z" finished-at="2019-11-09T07:01:25Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +166,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="7906" started-at="2019-10-05T06:43:35Z" finished-at="2019-10-05T06:43:43Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="20835" started-at="2019-11-09T07:01:25Z" finished-at="2019-11-09T07:01:46Z">
           <params>
             <param index="0">
               <value>
@@ -100,11 +177,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="appysearchtest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="appysearchtest" duration-ms="25740" started-at="2019-10-05T06:43:43Z" finished-at="2019-10-05T06:44:08Z">
+        <test-method status="PASS" signature="appysearchtest()[pri:4, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="appysearchtest" duration-ms="28535" started-at="2019-11-09T07:01:46Z" finished-at="2019-11-09T07:02:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appysearchtest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="636" started-at="2019-10-05T06:44:08Z" finished-at="2019-10-05T06:44:09Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="766" started-at="2019-11-09T07:02:15Z" finished-at="2019-11-09T07:02:15Z">
           <params>
             <param index="0">
               <value>
@@ -115,7 +192,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="7636" started-at="2019-10-05T06:44:09Z" finished-at="2019-10-05T06:44:17Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="14458" started-at="2019-11-09T07:02:15Z" finished-at="2019-11-09T07:02:30Z">
           <params>
             <param index="0">
               <value>
@@ -126,11 +203,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="languageIconTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="languageIconTest" duration-ms="63" started-at="2019-10-05T06:44:17Z" finished-at="2019-10-05T06:44:17Z">
+        <test-method status="PASS" signature="languageIconTest()[pri:5, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="languageIconTest" duration-ms="87" started-at="2019-11-09T07:02:30Z" finished-at="2019-11-09T07:02:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- languageIconTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="1020" started-at="2019-10-05T06:44:17Z" finished-at="2019-10-05T06:44:18Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="753" started-at="2019-11-09T07:02:30Z" finished-at="2019-11-09T07:02:31Z">
           <params>
             <param index="0">
               <value>
@@ -141,7 +218,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="7604" started-at="2019-10-05T06:44:18Z" finished-at="2019-10-05T06:44:25Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="9374" started-at="2019-11-09T07:02:31Z" finished-at="2019-11-09T07:02:40Z">
           <params>
             <param index="0">
               <value>
@@ -152,11 +229,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="checkLogoText()[pri:6, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="checkLogoText" duration-ms="2" started-at="2019-10-05T06:44:25Z" finished-at="2019-10-05T06:44:25Z">
+        <test-method status="PASS" signature="checkLogoText()[pri:6, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="checkLogoText" duration-ms="2" started-at="2019-11-09T07:02:40Z" finished-at="2019-11-09T07:02:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoText -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="691" started-at="2019-10-05T06:44:25Z" finished-at="2019-10-05T06:44:26Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="803" started-at="2019-11-09T07:02:40Z" finished-at="2019-11-09T07:02:41Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +244,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="7245" started-at="2019-10-05T06:44:26Z" finished-at="2019-10-05T06:44:33Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="22055" started-at="2019-11-09T07:02:41Z" finished-at="2019-11-09T07:03:03Z">
           <params>
             <param index="0">
               <value>
@@ -178,11 +255,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loginTest()[pri:7, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="loginTest" duration-ms="13548" started-at="2019-10-05T06:44:33Z" finished-at="2019-10-05T06:44:47Z">
+        <test-method status="PASS" signature="loginTest()[pri:7, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="loginTest" duration-ms="12629" started-at="2019-11-09T07:03:03Z" finished-at="2019-11-09T07:03:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="744" started-at="2019-10-05T06:44:47Z" finished-at="2019-10-05T06:44:47Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.HomePageTestCases@57fffcd7]" name="tearDown" is-config="true" duration-ms="848" started-at="2019-11-09T07:03:16Z" finished-at="2019-11-09T07:03:16Z">
           <params>
             <param index="0">
               <value>

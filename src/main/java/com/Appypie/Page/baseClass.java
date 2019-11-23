@@ -6,7 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -55,24 +57,19 @@ public class baseClass {
 			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
 			driver=new InternetExplorerDriver();
 		}
-		driver.get(configdp.getUrl());
 		driver.manage().window().maximize();
+		driver.get(configdp.getUrl());
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	    
 		//driver=browserFactory.getAppUrl(driver,configdp.getUrl());
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown(ITestResult result) throws Exception{
 		if(result.getStatus()==ITestResult.FAILURE) {
 			
 				logger.fail("Test Failed",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
-		}	
-		/*else if(result.getStatus()==ITestResult.SUCCESS) {
-			
-				logger.pass("Test Passed",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
-			
-		}*/
+		}
 		else if(result.getStatus()==ITestResult.SKIP) {
 			
 				logger.skip("Test Skipped",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());

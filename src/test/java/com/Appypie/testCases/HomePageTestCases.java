@@ -18,6 +18,7 @@ public class HomePageTestCases extends baseClass{
 	  logger.info("Start Application");
       homepage.logintoApp(excel.getStringData("Login", 0,0),excel.getStringData("Login", 0, 1));
       logger.pass("login success");
+      
 	  }
 	  
 	  @Test(priority=6)
@@ -38,8 +39,10 @@ public class HomePageTestCases extends baseClass{
 	 
 	  @Test(priority=1)
 	  public void changeLanguageTest() {
+	  logger = report.createTest("Change Language test");
 	  HomePage homepage=new HomePage(driver);
 	  homepage.verifyLanguageOptions();
+	  logger.fail("language icon is present");
 	  }
 	
 	  @Test(priority=2)

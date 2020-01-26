@@ -10,8 +10,9 @@
       <class name="com.Appypie.testCases.HomePageTestCases">
         <methods>
           <include name="tearDown"/>
+          <include name="creatorbtntest"/>
+          <include name="changeLanguageTest"/>
           <include name="setupSuite"/>
-          <include name="appysearchtest"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.Appypie.testCases.HomePageTestCases -->

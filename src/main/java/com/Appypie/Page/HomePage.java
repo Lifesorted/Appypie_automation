@@ -44,7 +44,7 @@ public class HomePage{
 	@FindBy(xpath="//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='appyslim-network-global-network']]")
 	WebElement languageicon;
 	
-	@FindBy(xpath="//a[text()='App Creatore']")
+	@FindBy(xpath="//a[contains(text(),'App Creatore') and @href='https://it.appypie.com']")
 	WebElement Espanollang;
 	
 	@FindBy(xpath="//img[@src='https://www.appypie.com/wp-content/themes/appypie2016/images/logo_new.png' and @class='lazyloaded']")
@@ -118,7 +118,7 @@ public class HomePage{
 		action.moveToElement(languageicon).perform();
 		Espanollang.click();
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

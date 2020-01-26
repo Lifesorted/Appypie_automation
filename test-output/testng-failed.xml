@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [AppypieSuite]">
-  <listeners>
-    <listener class-name="com.Appypie.utilities.testNgListener"/>
-  </listeners>
-  <test thread-count="5" name="ChromeTest(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.Appypie.testCases.HomePageTestCases">
         <methods>
           <include name="tearDown"/>
+          <include name="creatorbtntest"/>
+          <include name="loginTest"/>
+          <include name="changeLanguageTest"/>
           <include name="setupSuite"/>
-          <include name="appysearchtest"/>
+          <include name="checkLogoText"/>
+          <include name="languageIconTest"/>
+          <include name="signUpbtnTest"/>
+          <include name="logoClickTest"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.Appypie.testCases.HomePageTestCases -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [AppypieSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -41,13 +41,13 @@ public class HomePage{
 	@FindBy(xpath="//span[contains(text(), 'appypie.com')]")
 	WebElement logotext;
 	
-	@FindBy(xpath="//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='iconz-global']]")
+	@FindBy(xpath="//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='appyslim-network-global-network']]")
 	WebElement languageicon;
 	
-	@FindBy(xpath="//a[text()='italiano']")
+	@FindBy(xpath="//a[text()='App Creatore']")
 	WebElement Espanollang;
 	
-	@FindBy(xpath="//img[@src='https://d2wuvg8krwnvon.cloudfront.net/wp/en/images/logo_new.png']")
+	@FindBy(xpath="//img[@src='https://www.appypie.com/wp-content/themes/appypie2016/images/logo_new.png' and @class='lazyloaded']")
 	WebElement logoclick;
 	
 	@FindBy(xpath="//span[contains(text(),'Products')]")
@@ -70,6 +70,9 @@ public class HomePage{
 	
 	@FindBy(xpath="//a[contains(text(),'Logout')]")
 	WebElement Logout;
+	
+	@FindBy(xpath="//span[contains(text(),'Products')]")
+	WebElement product;
 	
 	@FindBy(xpath="//a[contains(text(),'Create your free app') and @class='home-btn']")
 	WebElement creatorbtn;
@@ -103,7 +106,7 @@ public class HomePage{
 			System.out.println("language Icon is present on homepage");
 		}
 		else {
-			new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='iconz-global")));
+			new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='globeDropdown']//div[@class='dropbtn'][span[@class='appyslim-network-global-network']]")));
 	        System.out.println("Waiting for 5 secs");
 			System.out.print("Language icon is not present on home page");
 		}
@@ -179,9 +182,16 @@ public class HomePage{
 	}
 	
 	public void creatorbtn_Test() {
+		product.click();
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,300)");
 		creatorbtn.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String url=driver.getCurrentUrl();
 		Assert.assertEquals(url,"https://snappy.appypie.com/appbuilder/creator-software/");
 	}

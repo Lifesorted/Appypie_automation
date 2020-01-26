@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-AppypieSuite">
-              <span class="suite-name border-passed">AppypieSuite</span>
+              <span class="suite-name border-failed">AppypieSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AppypieSuite" class="hide-methods failed suite-AppypieSuite"> (hide)</a> <!-- hide-methods failed suite-AppypieSuite -->
+                      <a href="#" panel-name="suite-AppypieSuite" class="show-methods failed suite-AppypieSuite"> (show)</a> <!-- show-methods failed suite-AppypieSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AppypieSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="appysearchtest">appysearchtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AppypieSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-AppypieSuite" class="show-methods passed suite-AppypieSuite"> (show)</a> <!-- show-methods passed suite-AppypieSuite -->
                     </span>
                     <div class="method-list-content passed suite-AppypieSuite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="appysearchtest">appysearchtest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="changeLanguageTest">changeLanguageTest</a> <!-- method navigator-link -->
@@ -152,9 +161,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AppypieSuite" class="panel AppypieSuite">
-          <div class="suite-AppypieSuite-class-passed">
+          <div class="suite-AppypieSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.Appypie.testCases.HomePageTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -163,8 +172,41 @@
                   <a name="appysearchtest">
                   </a> <!-- appysearchtest -->
                   <span class="method-name">appysearchtest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[contains(text(),&apos;Appy Store&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LAPTOP30&apos;, ip: &apos;192.168.215.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200103162918, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1780, moz:profile: C:\Users\Admin1\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 95e4d52e-54da-45b4-b25f-eb22f638b17b
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Appy Store&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.Appypie.Page.HomePage.navigateAppyStore(HomePage.java:158)
+	at com.Appypie.testCases.HomePageTestCases.appysearchtest(HomePageTestCases.java:63)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AppypieSuite-class-failed -->
+          <div class="suite-AppypieSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Appypie.testCases.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="changeLanguageTest">
@@ -230,7 +272,7 @@
     &lt;listener class-name=&quot;com.Appypie.utilities.testNgListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.Appypie.testCases.HomePageTestCases&quot;/&gt;
     &lt;/classes&gt;
@@ -274,42 +316,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'appysearchtest')
+data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(0, 3, 26629);
+data.setCell(0, 3, 12670);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
+data.setCell(1, 1, 'signUpbtnTest')
 data.setCell(1, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(1, 3, 21433);
+data.setCell(1, 3, 10286);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'changeLanguageTest')
 data.setCell(2, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(2, 3, 12708);
+data.setCell(2, 3, 9918);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'signUpbtnTest')
+data.setCell(3, 1, 'creatorbtntest')
 data.setCell(3, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(3, 3, 10459);
+data.setCell(3, 3, 7260);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'creatorbtntest')
+data.setCell(4, 1, 'logoClickTest')
 data.setCell(4, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(4, 3, 8076);
+data.setCell(4, 3, 895);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logoClickTest')
+data.setCell(5, 1, 'appysearchtest')
 data.setCell(5, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(5, 3, 1384);
+data.setCell(5, 3, 221);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'languageIconTest')
 data.setCell(6, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(6, 3, 97);
+data.setCell(6, 3, 67);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'checkLogoText')
 data.setCell(7, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(7, 3, 2);
+data.setCell(7, 3, 9);
 window.suiteTableData['AppypieSuite']= { tableData: data, tableDiv: 'times-div-AppypieSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-AppypieSuite">
               </div> <!-- times-div-AppypieSuite -->
             </div> <!-- times-div -->
@@ -341,100 +383,104 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">748 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">688 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">creatorbtntest</span>
-                <span class="method-start">15672 ms</span>
+                <span class="method-start">13865 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=creatorbtntest status=SUCCESS method=HomePageTestCases.creatorbtntest()[pri:1, inst...)</span>
-                <span class="method-start">23750 ms</span>
+                <span class="method-start">21130 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">24391 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">31075 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpbtnTest</span>
-                <span class="method-start">34916 ms</span>
+                <span class="method-start">42670 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signUpbtnTest status=SUCCESS method=HomePageTestCases.signUpbtnTest()[pri:2, instan...)</span>
-                <span class="method-start">45378 ms</span>
+                <span class="method-start">52960 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">46110 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">63700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoClickTest</span>
-                <span class="method-start">57474 ms</span>
+                <span class="method-start">76783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=logoClickTest status=SUCCESS method=HomePageTestCases.logoClickTest()[pri:3, instan...)</span>
-                <span class="method-start">58859 ms</span>
+                <span class="method-start">77682 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">59557 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">86775 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeLanguageTest</span>
-                <span class="method-start">70247 ms</span>
+                <span class="method-start">99332 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=changeLanguageTest status=SUCCESS method=HomePageTestCases.changeLanguageTest()[pri...)</span>
-                <span class="method-start">82957 ms</span>
+                <span class="method-start">109250 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">84037 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">119938 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">languageIconTest</span>
-                <span class="method-start">94896 ms</span>
+                <span class="method-start">132480 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=languageIconTest status=SUCCESS method=HomePageTestCases.languageIconTest()[pri:5, ...)</span>
-                <span class="method-start">94994 ms</span>
+                <span class="method-start">132548 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">95730 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">142256 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkLogoText</span>
-                <span class="method-start">106929 ms</span>
+                <span class="method-start">155430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=checkLogoText status=SUCCESS method=HomePageTestCases.checkLogoText()[pri:6, instan...)</span>
-                <span class="method-start">106932 ms</span>
+                <span class="method-start">155441 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">107701 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">164813 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">appysearchtest</span>
-                <span class="method-start">118468 ms</span>
+                <span class="method-start">177602 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=appysearchtest status=SUCCESS method=HomePageTestCases.appysearchtest()[pri:7, inst...)</span>
-                <span class="method-start">145098 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown([TestResult name=appysearchtest status=FAILURE method=HomePageTestCases.appysearchtest()[pri:7, inst...)</span>
+                <span class="method-start">177833 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">145796 ms</span>
+                <span class="method-name">launchBrowser(firefox)</span>
+                <span class="method-start">178208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">156787 ms</span>
+                <span class="method-start">191759 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=HomePageTestCases.loginTest()[pri:8, instance:com.A...)</span>
-                <span class="method-start">178221 ms</span>
+                <span class="method-start">204430 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

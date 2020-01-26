@@ -64,7 +64,7 @@ public class HomePageTestCases extends baseClass{
 	  }
 	  
 	  @Test(priority=1)
-	  private void creatorbtntest() {
+	  public void creatorbtntest() {
 		  HomePage homepage=new HomePage(driver);
 		  homepage.creatorbtn_Test();
 	  }

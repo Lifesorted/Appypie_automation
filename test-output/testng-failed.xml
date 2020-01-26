@@ -5,18 +5,12 @@
     <listener class-name="com.Appypie.utilities.testNgListener"/>
   </listeners>
   <test thread-count="5" name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.Appypie.testCases.HomePageTestCases">
         <methods>
           <include name="tearDown"/>
-          <include name="creatorbtntest"/>
-          <include name="loginTest"/>
-          <include name="changeLanguageTest"/>
           <include name="setupSuite"/>
-          <include name="languageIconTest"/>
-          <include name="signUpbtnTest"/>
-          <include name="logoClickTest"/>
           <include name="appysearchtest"/>
           <include name="launchBrowser"/>
         </methods>

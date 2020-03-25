@@ -23,7 +23,7 @@ public class HomePage{
 	PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//a[contains(text(),'Log in')]")
+	@FindBy(xpath="//span[contains(text(),'Log In')]")
 	WebElement LoginBtn;
 	
 	@FindBy(xpath="//input[@name='login_username']")
@@ -35,8 +35,11 @@ public class HomePage{
 	@FindBy(xpath="//button[@id='submitme']")
 	WebElement loginme;
 	
-	@FindBy(xpath="//a[contains(text(),'Join')]")
-	WebElement joinbutton;
+	@FindBy(xpath="//a[contains(text(),'Sign up') and @class=\"style-navi ng-binding\"]")
+	WebElement signup;
+	
+	@FindBy(xpath="//span[contains(text(),'Already have an account?')]")
+	WebElement alreadtext;
 	
 	@FindBy(xpath="//span[contains(text(), 'appypie.com')]")
 	WebElement logotext;
@@ -74,8 +77,9 @@ public class HomePage{
 	@FindBy(xpath="//span[contains(text(),'Products')]")
 	WebElement product;
 	
-	@FindBy(xpath="//a[contains(text(),'Create your free app') and @class='home-btn']")
+	@FindBy(xpath="//span[contains(text(),'Create Your Free App Now')]")
 	WebElement creatorbtn;
+	
 	//Login test with positive scenario 
 	public void logintoApp(String uname,String pass) throws InterruptedException {
 		LoginBtn.click();
@@ -139,15 +143,14 @@ public class HomePage{
 	    }
 	}
 	
-	// Test join button
-	public void verifyJoinbtn() throws InterruptedException {
-		joinbutton.click();
-		Thread.sleep(3000);
-		String signupurl=driver.getCurrentUrl();
-		if(signupurl.equals("https://snappy.appypie.com/signup")) {
-			System.out.println("Signup button clickable and redirect to signup popup");
+	// Test signup button
+	public void signUpTabTest() throws InterruptedException {
+		LoginBtn.click();
+		signup.click();
+		if(alreadtext.isDisplayed()) {
+			System.out.println("Signup button is working");
 		}else {
-			System.out.println("Buttton is blocked or no clikable");
+			System.out.print("Signup tab not working");
 		}
 	}
 	
@@ -174,6 +177,7 @@ public class HomePage{
 		return new HomePage(driver);
 	}
 	
+	//test logut functionality
 	protected HomePage logoutfunctionality() {
 		Actions action =new Actions(driver);
 		action.moveToElement(welcomemenu).perform();
@@ -182,9 +186,6 @@ public class HomePage{
 	}
 	
 	public void creatorbtn_Test() {
-		product.click();
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,300)");
 		creatorbtn.click();
 		try {
 			Thread.sleep(3000);

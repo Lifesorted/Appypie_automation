@@ -6,14 +6,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
-
-import com.Appypie.utilities.browserFactory;
 import com.Appypie.utilities.configDataProvider;
 import com.Appypie.utilities.excelDataProvider;
 import com.Appypie.utilities.helper;
@@ -24,7 +20,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class baseClass {
 
-	public WebDriver driver;
+	public WebDriver driver=null;
 	public excelDataProvider excel;
 	public configDataProvider configdp;
 	public ExtentReports report;
@@ -42,6 +38,9 @@ public class baseClass {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void launchBrowser(String browser) {
+		
+		if(driver==null) {
+		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
@@ -57,11 +56,17 @@ public class baseClass {
 			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
 			driver=new InternetExplorerDriver();
 		}
+		else
+		{
+			System.out.println("No driver found to execute");
+		}
+		
+		}
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(configdp.getUrl());
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	    
-		//driver=browserFactory.getAppUrl(driver,configdp.getUrl());
 	}
 	
 	@AfterMethod(alwaysRun=true)
@@ -75,6 +80,7 @@ public class baseClass {
 				logger.skip("Test Skipped",MediaEntityBuilder.createScreenCaptureFromPath(helper.captureScreenshot(driver)).build());
 		}
 		report.flush();
-		browserFactory.quitbrowser(driver);
+		driver.quit();
+		driver=null;
       }
 }

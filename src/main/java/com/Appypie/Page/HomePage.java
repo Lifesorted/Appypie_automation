@@ -23,7 +23,7 @@ public class HomePage{
 	PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//span[contains(text(),'Log In')]")
+	@FindBy(xpath="//a[contains(text(),'Log In')]")
 	WebElement LoginBtn;
 	
 	@FindBy(xpath="//input[@name='login_username']")
@@ -77,7 +77,7 @@ public class HomePage{
 	@FindBy(xpath="//span[contains(text(),'Products')]")
 	WebElement product;
 	
-	@FindBy(xpath="//span[contains(text(),'Create Your Free App Now')]")
+	@FindBy(xpath="//a[contains(text(),'Get Started') and @class='diyBannerBtn']")
 	WebElement creatorbtn;
 	
 	//Login test with positive scenario 
@@ -177,7 +177,7 @@ public class HomePage{
 		return new HomePage(driver);
 	}
 	
-	//test logut functionality
+	//test logout functionality
 	protected HomePage logoutfunctionality() {
 		Actions action =new Actions(driver);
 		action.moveToElement(welcomemenu).perform();

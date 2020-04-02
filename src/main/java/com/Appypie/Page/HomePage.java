@@ -145,7 +145,7 @@ public class HomePage{
 	    }
 	}
 	
-	// Test signup button
+	// Test signup button switch 
 	public void signUpTabTest() throws InterruptedException {
 		LoginBtn.click();
 		signup.click();

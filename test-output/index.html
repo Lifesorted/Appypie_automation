@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-AppypieSuite">
-              <span class="suite-name border-failed">AppypieSuite</span>
+              <span class="suite-name border-passed">AppypieSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-AppypieSuite" class="hide-methods failed suite-AppypieSuite"> (hide)</a> <!-- hide-methods failed suite-AppypieSuite -->
-                      <a href="#" panel-name="suite-AppypieSuite" class="show-methods failed suite-AppypieSuite"> (show)</a> <!-- show-methods failed suite-AppypieSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-AppypieSuite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="creatorbtntest">creatorbtntest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-AppypieSuite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-AppypieSuite" class="show-methods passed suite-AppypieSuite"> (show)</a> <!-- show-methods passed suite-AppypieSuite -->
                     </span>
                     <div class="method-list-content passed suite-AppypieSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="creatorbtntest">creatorbtntest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
@@ -141,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AppypieSuite" class="panel AppypieSuite">
-          <div class="suite-AppypieSuite-class-failed">
+          <div class="suite-AppypieSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.Appypie.testCases.HomePageTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -152,21 +143,8 @@
                   <a name="creatorbtntest">
                   </a> <!-- creatorbtntest -->
                   <span class="method-name">creatorbtntest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [https://snappy.appypie.com/appbuilder/creator-software/] but found [https://snappy.appypie.com/appbuilder/creator-software/?_ga=2.12443063.2052174636.1585493378-454766003.1585493378]
-	at com.Appypie.Page.HomePage.creatorbtn_Test(HomePage.java:197)
-	at com.Appypie.testCases.HomePageTestCases.creatorbtntest(HomePageTestCases.java:27)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AppypieSuite-class-failed -->
-          <div class="suite-AppypieSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Appypie.testCases.HomePageTestCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest">
@@ -250,24 +228,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(0, 3, 10623);
+data.setCell(0, 3, 11521);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'creatorbtntest')
 data.setCell(1, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(1, 3, 10317);
+data.setCell(1, 3, 10100);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'signUpbtnTabTest')
 data.setCell(2, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(2, 3, 6577);
+data.setCell(2, 3, 6021);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'logoClickTest')
 data.setCell(3, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(3, 3, 3345);
+data.setCell(3, 3, 2304);
 window.suiteTableData['AppypieSuite']= { tableData: data, tableDiv: 'times-div-AppypieSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-AppypieSuite">
               </div> <!-- times-div-AppypieSuite -->
             </div> <!-- times-div -->
@@ -303,52 +281,48 @@ return data;
                 <span class="method-start">625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">15662 ms</span>
+                <span class="method-name">creatorbtntest</span>
+                <span class="method-start">15194 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=HomePageTestCases.loginTest()[pri:0, instance:com.A...)</span>
-                <span class="method-start">26294 ms</span>
+                <span class="method-name">tearDown([TestResult name=creatorbtntest status=SUCCESS method=HomePageTestCases.creatorbtntest()[pri:0, inst...)</span>
+                <span class="method-start">25309 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser(firefox)</span>
-                <span class="method-start">40081 ms</span>
+                <span class="method-start">35745 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">creatorbtntest</span>
-                <span class="method-start">55230 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">49500 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDown([TestResult name=creatorbtntest status=FAILURE method=HomePageTestCases.creatorbtntest()[pri:1, inst...)</span>
-                <span class="method-start">65555 ms</span>
+                <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=HomePageTestCases.loginTest()[pri:1, instance:com.A...)</span>
+                <span class="method-start">61037 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser(firefox)</span>
-                <span class="method-start">65747 ms</span>
+                <span class="method-start">74731 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">logoClickTest</span>
-                <span class="method-start">66952 ms</span>
+                <span class="method-start">89571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=logoClickTest status=SUCCESS method=HomePageTestCases.logoClickTest()[pri:2, instan...)</span>
-                <span class="method-start">70305 ms</span>
+                <span class="method-start">91887 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser(firefox)</span>
-                <span class="method-start">82869 ms</span>
+                <span class="method-start">100429 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signUpbtnTabTest</span>
-                <span class="method-start">95994 ms</span>
+                <span class="method-start">114204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=signUpbtnTabTest status=SUCCESS method=HomePageTestCases.signUpbtnTabTest()[pri:3, ...)</span>
-                <span class="method-start">102574 ms</span>
+                <span class="method-start">120232 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

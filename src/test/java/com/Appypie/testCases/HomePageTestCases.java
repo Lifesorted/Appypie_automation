@@ -11,7 +11,7 @@ public class HomePageTestCases extends baseClass{
 	HomePage homepage=new HomePage(driver);
 	ExtentTest logger;
 	
-	  @Test(priority=0)
+	  @Test(priority=1)
 	  public void loginTest() throws InterruptedException {
 	  logger = report.createTest("Login test");
 	  HomePage homepage=new HomePage(driver);
@@ -21,7 +21,7 @@ public class HomePageTestCases extends baseClass{
       
 	  }
 	  
-	  @Test(priority=1)
+	  @Test(priority=0)
 	  public void creatorbtntest() {
 		  HomePage homepage=new HomePage(driver);
 		  homepage.creatorbtn_Test();

@@ -82,6 +82,10 @@ public class HomePage{
 	
 	@FindBy(xpath="//a[contains(text(),'Next')]")
 	WebElement nextbtn;
+	
+	@FindBy(xpath="//h4[contains(text(),'Task Automation')]")
+	WebElement taskauto;
+	
 	//Login test with positive scenario 
 	public void logintoApp(String uname,String pass) throws InterruptedException {
 		LoginBtn.click();
@@ -202,4 +206,16 @@ public class HomePage{
 			System.out.println("Creator button not clickable or there is some other issue");
 		}
 	}
+	
+	public HomePage switchToConnect() {
+		taskauto.click();
+		creatorbtn.click();
+		String getcurrenturl=driver.getCurrentUrl();
+		Assert.assertEquals("https://www.appypie.com/connect/", getcurrenturl);
+		System.out.print("Successfully redirect to connect domain");
+		return new HomePage(driver);
+	}
+	
+	
+	
 }

@@ -1,44 +1,52 @@
 package com.Appypie.testCases;
 import org.testng.annotations.Test;
-
 import com.Appypie.Page.HomePage;
 import com.Appypie.Page.baseClass;
 import com.aventstack.extentreports.ExtentTest;
 
 //@Listeners(com.Appypie.Utility.testNgListener.class)
-public class HomePageTestCases extends baseClass{
+    class HomePageTestCases extends baseClass{
 	
-	HomePage homepage=new HomePage(driver);
-	ExtentTest logger;
+    	HomePage homepage;
+    	
+	    ExtentTest logger;
 	
 	  @Test(priority=1)
 	  public void loginTest() throws InterruptedException {
 	  logger = report.createTest("Login test");
-	  HomePage homepage=new HomePage(driver);
+	  homepage=new HomePage(driver);
 	  logger.info("Start Application");
       homepage.logintoApp(excel.getStringData("Login", 0,0),excel.getStringData("Login", 0, 1));
       logger.pass("login success");
       
 	  }
 	  
-	  @Test(priority=0)
+	  @Test(priority=4)
 	  public void creatorbtntest() {
-		  HomePage homepage=new HomePage(driver);
+		  homepage=new HomePage(driver);
 		  homepage.creatorbtn_Test();
 	  }
 	  
 	  @Test(priority=2)
 	  public void logoClickTest() {
-	  HomePage homepage=new HomePage(driver);
+	  homepage=new HomePage(driver);
 	  homepage.verifylogoClick();
 	  }
 	  
 	  @Test(priority=3)
 	  private void signUpbtnTabTest() throws InterruptedException {
-	  HomePage homepage=new HomePage(driver);
+	  homepage=new HomePage(driver);
 	  homepage.signUpTabTest();
 	  }
 	  
+	  @Test(priority=0)
+	  protected void connectDomainTest() {
+		  logger=report.createTest("Switch To Connect Domain Test");
+		  homepage=new HomePage(driver);
+		  logger.info("Start application");
+		  homepage.switchToConnect();
+		  logger.pass("Test Case Passed");
+	  }
 	/*  
 	  @Test(priority=6)
 	  public void checkLogoText() {

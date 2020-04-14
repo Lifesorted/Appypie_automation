@@ -50,7 +50,7 @@ public class HomePage{
 	@FindBy(xpath="//a[contains(text(),'App Creatore') and @href='https://it.appypie.com']")
 	WebElement Espanollang;
 	
-	@FindBy(xpath="//img[@src='https://images.appypie.com/wp-content/uploads/2020/03/16070955/appypie-logo.svg' and @class='logoDark lazyloaded']")
+	@FindBy(xpath="//img[@src='https://images.appypie.com/wp-content/uploads/2020/03/16070955/appypie-logo.svg' and @class='lazyloaded']")
 	WebElement logoclick;
 	
 	@FindBy(xpath="//span[contains(text(),'Products')]")

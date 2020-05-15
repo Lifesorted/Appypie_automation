@@ -40,6 +40,7 @@ public class baseClass {
 	public void launchBrowser(String browser) {
 		
 		if(driver==null) {
+			
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{

@@ -2,6 +2,8 @@ package com.Appypie.Page;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -86,13 +88,27 @@ public class HomePage{
 	@FindBy(xpath="//h4[contains(text(),'Task Automation')]")
 	WebElement taskauto;
 	
+	@FindBy(xpath="//span[contains(text(),'Continue with Facebook')]")
+	WebElement fbloginbtn;
+	
+	@FindBy(xpath="//input[@placeholder=\"Search by App Name or App ID\"]")
+	WebElement appid;
+	
+	@FindBy(xpath="//button[@ng-click=\"searchBtnEvent();\"]")
+	WebElement searchicon;
+	
 	//Login test with positive scenario 
-	public void logintoApp(String uname,String pass) throws InterruptedException {
+	public void logintoApp(String uname,String pass) {
 		LoginBtn.click();
 		username.sendKeys(uname);
 		password.sendKeys(pass);
 		loginme.click();
-		Thread.sleep(5000);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String roadmapurl= driver.getCurrentUrl();
 		if(!roadmapurl.equals("https://snappy.appypie.com/user/app/")) {
 			System.out.println("Not able to login Check login details or site is down");
@@ -216,6 +232,74 @@ public class HomePage{
 		return new HomePage(driver);
 	}
 	
+	@FindBy(xpath="//input[@name='email']")
+	WebElement fbemail;
 	
+	@FindBy(xpath="//input[@name='pass']")
+	WebElement fbpass;
+	
+	@FindBy(xpath="//input[@name='login']")
+	WebElement fbsigninbtn;
+	
+	public void facebooklogin(String fbuser,String fbpassword) {
+		LoginBtn.click();
+		fbloginbtn.click();
+		String parentWindow=driver.getWindowHandle();
+		for(String winhandle:driver.getWindowHandles()) {
+		driver.switchTo().window(winhandle);
+		}
+		fbemail.sendKeys(fbuser);
+		fbpass.sendKeys(fbpassword);
+		fbsigninbtn.click();
+		driver.switchTo().window(parentWindow);
+		try {
+            Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String url=driver.getCurrentUrl();
+		//waitafter(driver,20,url);
+		System.out.println(url);
+		Assert.assertEquals(url, "https://snappy.appypie.com/user/app/");
+		//System.out.println("Login success with facebook");
+	}
+	
+	public void searchAppId(String app_id) {
+		
+					
+		appid.sendKeys(app_id);
+		//HomePage.clickkeyswait(driver, viewmoretext, 30);
+		searchicon.click();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//viewmoretext.click();
+		String searchurl=driver.getCurrentUrl();
+		Assert.assertEquals(searchurl, "https://snappy.appypie.com/user/app/3f2825e0033f");
+		System.out.println("search working by app id");
+		
+		
+	}
+	
+	public static void sendkeyswait(WebDriver driver,WebElement element,int timeout,String value) {
+		new WebDriverWait(driver,timeout).until(ExpectedConditions.visibilityOf(element));
+		element.sendKeys(value);
+		
+	}
+	
+	public static void waitafter(WebDriver driver,int timeout,String element) {
+		new WebDriverWait(driver,timeout).until(ExpectedConditions.urlContains("https://snappy.appypie.com/user/app/"));
+		element.startsWith("https://snappy.appypie.com/user/app/");
+		
+	}
+	public static void clickkeyswait(WebDriver driver,WebElement element,int timeout) {
+		new WebDriverWait(driver,timeout).until(ExpectedConditions.visibilityOf(element));
+		element.click();
+		
+	}
 	
 }

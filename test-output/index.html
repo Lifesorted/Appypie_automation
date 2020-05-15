@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-AppypieSuite">
-                    <span>D:\Eclipse_Project\Appypie_automation\xmlFiles\testng.xml</span>
+                    <span>D:\Eclipse_Project\Appypie_automation\xmlFiles\forum.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +102,7 @@
                     <div class="method-list-content passed suite-AppypieSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="connectDomainTest">connectDomainTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="creatorbtntest">creatorbtntest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="logoClickTest">logoClickTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.HomePageTestCases" hash-for-method="signUpbtnTabTest">signUpbtnTabTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AppypieSuite" title="com.Appypie.testCases.forumpageTest" hash-for-method="getallelements">getallelements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AppypieSuite -->
@@ -140,42 +120,14 @@
           <div class="suite-AppypieSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.Appypie.testCases.HomePageTestCases</span>
+              <span class="class-name">com.Appypie.testCases.forumpageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="connectDomainTest">
-                  </a> <!-- connectDomainTest -->
-                  <span class="method-name">connectDomainTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="creatorbtntest">
-                  </a> <!-- creatorbtntest -->
-                  <span class="method-name">creatorbtntest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="logoClickTest">
-                  </a> <!-- logoClickTest -->
-                  <span class="method-name">logoClickTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signUpbtnTabTest">
-                  </a> <!-- signUpbtnTabTest -->
-                  <span class="method-name">signUpbtnTabTest</span>
+                  <a name="getallelements">
+                  </a> <!-- getallelements -->
+                  <span class="method-name">getallelements</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,20 +135,20 @@
         </div> <!-- panel AppypieSuite -->
         <div panel-name="test-xml-AppypieSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Eclipse_Project\Appypie_automation\xmlFiles\testng.xml</span>
+            <span class="header-content">D:\Eclipse_Project\Appypie_automation\xmlFiles\forum.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AppypieSuite&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AppypieSuite&quot; parallel=&quot;tests&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.Appypie.utilities.testNgListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Appypie.testCases.HomePageTestCases&quot;/&gt;
+      &lt;class name=&quot;com.Appypie.testCases.forumpageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- AppypieSuite --&gt;
@@ -236,32 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(0, 3, 10718);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'creatorbtntest')
-data.setCell(1, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(1, 3, 9423);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signUpbtnTabTest')
-data.setCell(2, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(2, 3, 8869);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'connectDomainTest')
-data.setCell(3, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(3, 3, 5542);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'logoClickTest')
-data.setCell(4, 2, 'com.Appypie.testCases.HomePageTestCases')
-data.setCell(4, 3, 3458);
+data.setCell(0, 1, 'getallelements')
+data.setCell(0, 2, 'com.Appypie.testCases.forumpageTest')
+data.setCell(0, 3, 224);
 window.suiteTableData['AppypieSuite']= { tableData: data, tableDiv: 'times-div-AppypieSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 224 ms</span>
               <div id="times-div-AppypieSuite">
               </div> <!-- times-div-AppypieSuite -->
             </div> <!-- times-div -->
@@ -287,70 +223,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Appypie.testCases.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Appypie.testCases.forumpageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">732 ms</span>
+                <span class="method-start">657 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">connectDomainTest</span>
-                <span class="method-start">17127 ms</span>
+                <span class="method-name">getallelements</span>
+                <span class="method-start">11565 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=connectDomainTest status=SUCCESS method=HomePageTestCases.connectDomainTest()[pri:0...)</span>
-                <span class="method-start">22671 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">24399 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">35781 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=loginTest status=SUCCESS method=HomePageTestCases.loginTest()[pri:1, instance:com.A...)</span>
-                <span class="method-start">46500 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">47258 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">logoClickTest</span>
-                <span class="method-start">59541 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=logoClickTest status=SUCCESS method=HomePageTestCases.logoClickTest()[pri:2, instan...)</span>
-                <span class="method-start">63003 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">63759 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">signUpbtnTabTest</span>
-                <span class="method-start">74548 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=signUpbtnTabTest status=SUCCESS method=HomePageTestCases.signUpbtnTabTest()[pri:3, ...)</span>
-                <span class="method-start">83420 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">84193 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">creatorbtntest</span>
-                <span class="method-start">96014 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=creatorbtntest status=SUCCESS method=HomePageTestCases.creatorbtntest()[pri:4, inst...)</span>
-                <span class="method-start">105453 ms</span>
+                <span class="method-name">tearDown([TestResult name=getallelements status=SUCCESS method=forumpageTest.getallelements()[pri:0, instance...)</span>
+                <span class="method-start">11793 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

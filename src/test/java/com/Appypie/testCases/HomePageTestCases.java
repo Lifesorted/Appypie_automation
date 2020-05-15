@@ -11,17 +11,22 @@ import com.aventstack.extentreports.ExtentTest;
     	
 	    ExtentTest logger;
 	
-	  @Test(priority=1)
-	  public void loginTest() throws InterruptedException {
+	  @Test(priority=0)
+	  public void loginwithfbTest() {
+	  homepage=new HomePage(driver);
+	  homepage.facebooklogin("vik@appypie.com", "thakur143");
+	  }
+	  
+	  @Test(priority=3)
+	  public void loginTest() {
 	  logger = report.createTest("Login test");
 	  homepage=new HomePage(driver);
 	  logger.info("Start Application");
       homepage.logintoApp(excel.getStringData("Login", 0,0),excel.getStringData("Login", 0, 1));
       logger.pass("login success");
-      
 	  }
 	  
-	  @Test(priority=4)
+	  @Test(priority=1)
 	  public void creatorbtntest() {
 		  homepage=new HomePage(driver);
 		  homepage.creatorbtn_Test();
@@ -33,13 +38,13 @@ import com.aventstack.extentreports.ExtentTest;
 	  homepage.verifylogoClick();
 	  }
 	  
-	  @Test(priority=3)
+	  @Test(priority=5)
 	  private void signUpbtnTabTest() throws InterruptedException {
 	  homepage=new HomePage(driver);
 	  homepage.signUpTabTest();
 	  }
 	  
-	  @Test(priority=0)
+	  @Test(priority=4)
 	  protected void connectDomainTest() {
 		  logger=report.createTest("Switch To Connect Domain Test");
 		  homepage=new HomePage(driver);

@@ -11,7 +11,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setupSuite"/>
-          <include name="navigateToForumTest"/>
+          <include name="addForumQuestionTest"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.Appypie.testCases.forumpageTest -->

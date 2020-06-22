@@ -42,6 +42,36 @@ public class forumPage {
 	@FindBy(xpath="//a[contains(text(),'Pending Questions')]")
 	WebElement pendingquestions;
 	
+	@CacheLookup
+	@FindBy(xpath="//button[text()='Add Questions']")
+	WebElement Addquestionbtn;
+	
+	public forumPage forumNavigation() {
+		clickkeyswait(driver,viewmore,12000);
+		System.out.println(viewmore.getText());
+		
+		try {
+			Thread.sleep(13000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		//clickkeyswait(driver,moreitems,50000);
+		moreitems.click();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;  
+		js.executeScript("window.scrollBy(0,250)");
+		forum.click();
+		
+		try {
+			Thread.sleep(9000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return new forumPage(driver);
+	}
 	public forumPage navigateToForum() {
 		
 		//WebDriverWait wait=new WebDriverWait(driver,20);
@@ -80,6 +110,11 @@ public class forumPage {
 		return new forumPage(driver);
 	}
 	
+	public forumPage addForumQuestion() {
+		forumNavigation();
+		Addquestionbtn.click();
+		return new forumPage(driver);
+	}
 	public void selectDateFilter(WebDriver driver,WebElement element,String dateval) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;  
         js.executeScript("arguments[0].setAttribute('value','"+dateval+"')", element);

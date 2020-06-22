@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AppypieSuite" duration-ms="68411" started-at="2020-06-03T08:53:17Z" finished-at="2020-06-03T08:54:26Z">
+  <suite name="AppypieSuite" duration-ms="67447" started-at="2020-06-12T14:22:34Z" finished-at="2020-06-12T14:23:42Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="68411" started-at="2020-06-03T08:53:17Z" finished-at="2020-06-03T08:54:26Z">
+    <test name="ChromeTest" duration-ms="67447" started-at="2020-06-12T14:22:34Z" finished-at="2020-06-12T14:23:42Z">
       <class name="com.Appypie.testCases.forumpageTest">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="setupSuite" is-config="true" duration-ms="716" started-at="2020-06-03T08:53:17Z" finished-at="2020-06-03T08:53:17Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="setupSuite" is-config="true" duration-ms="639" started-at="2020-06-12T14:22:34Z" finished-at="2020-06-12T14:22:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="12752" started-at="2020-06-03T08:53:17Z" finished-at="2020-06-03T08:53:30Z">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="launchBrowser" is-config="true" duration-ms="12074" started-at="2020-06-12T14:22:34Z" finished-at="2020-06-12T14:22:46Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="navigateToForumTest()[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="navigateToForumTest" duration-ms="45872" started-at="2020-06-03T08:53:30Z" finished-at="2020-06-03T08:54:16Z">
+        <test-method status="PASS" signature="addForumQuestionTest()[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="addForumQuestionTest" duration-ms="45224" started-at="2020-06-12T14:22:46Z" finished-at="2020-06-12T14:23:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToForumTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="tearDown" is-config="true" duration-ms="9770" started-at="2020-06-03T08:54:16Z" finished-at="2020-06-03T08:54:26Z">
+        </test-method> <!-- addForumQuestionTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7]" name="tearDown" is-config="true" duration-ms="10129" started-at="2020-06-12T14:23:32Z" finished-at="2020-06-12T14:23:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigateToForumTest status=SUCCESS method=forumpageTest.navigateToForumTest()[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7] output={null}]]]>
+                <![CDATA[[TestResult name=addForumQuestionTest status=SUCCESS method=forumpageTest.addForumQuestionTest()[pri:0, instance:com.Appypie.testCases.forumpageTest@57fffcd7] output={null}]]]>
               </value>
             </param>
           </params>

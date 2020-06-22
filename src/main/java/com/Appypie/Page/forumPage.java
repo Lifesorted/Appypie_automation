@@ -46,6 +46,7 @@ public class forumPage {
 	@FindBy(xpath="//button[text()='Add Questions']")
 	WebElement Addquestionbtn;
 	
+	// Base forum navigation method
 	public forumPage forumNavigation() {
 		clickkeyswait(driver,viewmore,12000);
 		System.out.println(viewmore.getText());
@@ -72,6 +73,8 @@ public class forumPage {
 		
 		return new forumPage(driver);
 	}
+	
+	// NAvigate to forum test
 	public forumPage navigateToForum() {
 		
 		//WebDriverWait wait=new WebDriverWait(driver,20);
@@ -110,15 +113,19 @@ public class forumPage {
 		return new forumPage(driver);
 	}
 	
+	// Add forum question test method
 	public forumPage addForumQuestion() {
 		forumNavigation();
 		Addquestionbtn.click();
 		return new forumPage(driver);
 	}
+	
 	public void selectDateFilter(WebDriver driver,WebElement element,String dateval) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;  
         js.executeScript("arguments[0].setAttribute('value','"+dateval+"')", element);
 	}
+	
+	// get all element method
 	public void getAllElements() {
 		List<WebElement> checkbx=driver.findElements(By.xpath("//div[@class=\"textwidget\"]//a[@role=\"link\"]"));
 		System.out.println("Count of languages available"+checkbx.size());
@@ -132,6 +139,7 @@ public class forumPage {
 			System.out.println("All language option not present and test case failed");
 	}
 	
+	// common wait method for element
 	public static void clickkeyswait(WebDriver driver,WebElement element,int timeout) {
 		new WebDriverWait(driver,timeout).until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
